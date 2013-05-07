@@ -1,0 +1,10 @@
+!!!
+%html{:lang => 'en'}
+  %head
+    = render :partial => 'shared/meta'
+  %body
+    #centering_container
+      = render :partial => 'shared/header'
+      = yield
+    = render :partial => 'shared/footer'
+    = render :partial => "shared/scripts"

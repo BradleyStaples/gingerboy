@@ -1,0 +1,8 @@
+.contents-wrapper.padding-large.centered
+  %h2.margin-none.text-large=@project.name
+  - if !@project.image.nil?
+    %img{:src => image_path(@project.image)}
+  %p.margin-small=@project.description.html_safe
+  - if !@project.url.nil?
+    %p.margin-small
+      %a{:href => @project.url}='Project Home Page'

@@ -1,0 +1,129 @@
+* {@include box-sizing(border-box);}
+
+html, body {
+  font-size: $baseFontSize;
+  line-height: $baseFontSize + 5px;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial;
+  font-weight: 300;
+  color: $defaultBrown;
+}
+
+body {
+  background-color: #e5efea;
+  background-image: url(image_path('body_bg.jpg'));
+  background-repeat: repeat;
+  background-postion: center center;
+  background-attachment: fixed;
+}
+
+
+a {
+  color: $defaultBlue;
+  text-decoration: none;
+  border-bottom: px2em(1px)  solid transparent;
+  @include transition-property(color, border-color);
+  @include transition-duration(.5s);
+  &:hover {
+    text-decoration: none;
+    color: lighten($defaultBlue, 20%);
+    border-bottom: px2em(1px) dotted lighten($defaultBlue, 20%);
+  }
+}
+
+h1 {
+  color: darken($defaultBlue, 5%);
+  @include text-shadow(rgba(#fff, 0.5) px2em(2px) px2em(1px) 0);
+}
+
+h2 {
+  color: darken($defaultBrown, 10%);
+  @include text-shadow(rgba(#fff, 0.5) px2em(2px) px2em(2px) 0);
+}
+
+h3 {
+  color: darken($defaultBrown, 5%);
+}
+
+hr {
+  height: 0;
+  border-top: px2em(1px) solid lighten($defaultOrange, 10%);
+  border-bottom: px2em(1px) solid darken($defaultOrange, 5%);
+}
+
+::-moz-selection {
+  background: lighten($defaultBlue, 25%);
+  color: $defaultBrown;
+  @include text-shadow(rgba(#fff, 0.5) px2em(2px) px2em(2px) 0);
+}
+::selection {
+  background: lighten($defaultBlue, 25%);
+  color: $defaultBrown;
+  @include text-shadow(rgba(#fff, 0.5) px2em(2px) px2em(2px) 0);
+}
+
+.site-title {
+  font-size: px2em(54px);
+  line-height: px2em(59px, 54px);
+  @include text-shadow(
+    #fff px2em(-1px) px2em(-1px) 0,
+    #fff px2em(1px) px2em(-1px) 0,
+    #fff px2em(-1px) px2em(1px) 0,
+    #fff px2em(1px) px2em(1px) 0
+  );
+  margin: 0 px2em(5px, 54px) 0 0;
+  padding: 0;
+}
+
+.contents-wrapper {
+  background-color: rgba(255, 255, 255, .7);
+  @include border-radius(.5em);
+  border: .313em solid #fff;
+  @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(8px));
+  width: px2em(300px);
+  min-height: px2em(300px);
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  & li {
+    list-style: none;
+    display: inline-block;
+  }
+}
+.hidden {display:none;}
+.no-list {list-style: none;}
+.block {display: block;}
+.inline {display: inline;}
+.inline-block {display: inline-block;}
+.margin-none {margin: 0;}
+.margin-large {margin: px2em(15px);}
+.margin-medium {margin: px2em(10px);}
+.margin-small {margin: px2em(5px);}
+.padding-none {padding: 0;}
+.padding-large {padding: px2em(15px);}
+.padding-medium {padding: px2em(10px);}
+.padding-small {padding: px2em(15px);}
+.centered {margin-left: auto; margin-right: auto;}
+.clear-both {clear: both;}
+.clear-left {clear: left;}
+.clear-right {clear: right}
+.float-left {float: left;}
+.float-right {float: right;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.text-flush {text-align: justify;}
+.text-tiny {font-size: px2em(14px); line-height:px2em(19px)}
+.text-small {font-size: px2em(16px); line-height:px2em(21px)}
+.text-large {font-size: px2em(20px); line-height:px2em(25px)}
+.text-huge {font-size: px2em(24px); line-height:px2em(29px)}
+.text-light {font-weight: 300;}
+.text-dense {font-weight: 400;}
+.text-bold {font-weight: 700;}
+.text-emphasis {font-style: italic;}
+.text-notice {color: $defaultOrange;}
+.text-muted {color: #bbb;}
+.text-serif {font-family: Georgia, Times, serif;}
+.text-mono {font-family: Courier, 'Courier New', monospace;}

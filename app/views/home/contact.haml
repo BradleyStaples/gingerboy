@@ -1,0 +1,19 @@
+.contents-wrapper.centered
+  %p
+    social media here
+  %form.contact-form.margin-small.text-small{:action => contacted_path, :method => 'post'}
+    %label.inline-block
+      name
+    %input.inline-block{:name => 'name'}
+    %label.inline-block
+      email
+    %input.inline-block{:name => 'email'}
+    %label.inline-block
+      phone
+      %span.text-muted< (optional)
+    %input.inline-block{:name => 'phone'}
+    %label.inline-block
+      message
+    %textarea.inline-block{:name => 'message'}
+    %button.btn.btn-submit.float-right.margin-medium.padding-small<
+      Submit

@@ -1,0 +1,8 @@
+$defaultBlue: #2396d1;
+$defaultBrown: #6a470b;
+$defaultOrange: #da7f09;
+$baseFontSize: 18px;
+
+@function px2em($target, $parent: $baseFontSize) {
+  @return $target / $parent + 0em;
+}

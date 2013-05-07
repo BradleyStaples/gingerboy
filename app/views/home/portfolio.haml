@@ -1,0 +1,9 @@
+.contents-wrapper.padding-large.centered
+  -@sites.each do |s|
+    .portfolio-entry
+      %h2.margin-none.text-large
+        %a{:href => s.url}=s.name
+      - if !s.thumb.nil?
+        %img{:src => image_path(s.thumb)}
+      %p.margin-small
+        #{s.description.html_safe}

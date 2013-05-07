@@ -1,0 +1,10 @@
+.contents-wrapper.padding-large.centered
+  %ul.no-list.margin-none.padding-none
+    - @projects.each do |p|
+      %li
+        %h2.margin-none.text-large
+          %a{:href => project_url(p.slug) } #{p.name}
+        - if !p.thumb.nil?
+          %img{:src => image_path(p.thumb)}
+        %p.margin-small
+          #{p.blurb}

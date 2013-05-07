@@ -1,0 +1,27 @@
+# Return an array of filepaths relative to src_dir to include before jasmine specs. default []
+src_files:
+  - manifests/testing.js
+
+# Return an array of filepaths relative to src_dir to include before jasmine specs. default []
+stylesheets:
+  - "app/assets/**/*.css"
+
+# jasmine-jquery = https://github.com/velesin/jasmine-jquery
+# http://github.com/derickbailey/jasmine.async
+# relative to spec_dir
+helpers:
+  - "helpers/**/*.{js,coffee,js.coffee}"
+
+# spec_files
+# relative to spec_dir
+spec_files:
+  - "**/*[Ss]pec.{js,coffee,js.coffee}"
+
+# src_dir
+# Source directory path. default: root
+src_dir:
+  - app/assets/javascripts
+
+# spec_dir
+# Spec directory path. # Default: spec/javascripts
+spec_dir: spec/javascripts

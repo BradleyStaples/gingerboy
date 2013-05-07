@@ -1,0 +1,31 @@
+source 'https://rubygems.org'
+
+gem 'rails', '3.2.12'
+gem 'mysql2'
+gem 'jquery-rails'
+gem 'jquery-rails'
+gem 'underscore-rails' # https://github.com/rweng/underscore-rails
+gem 'annotate', ">=2.5.0" # https://github.com/ctran/annotate_models
+
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'compass-rails'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem 'haml-rails'
+  gem "jshint_on_rails", "~> 1.0.2" #https://github.com/bgouveia/jshint_on_rails
+  gem 'coffee-rails-source-maps' # https://github.com/markbates/coffee-rails-source-maps
+end
+
+group :test do
+  gem 'test-unit'
+end
+
+group :test, :development do
+  gem 'jasmine-rails' # https://github.com/searls/jasmine-rails
+end
+
+

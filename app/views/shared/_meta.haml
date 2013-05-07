@@ -1,0 +1,13 @@
+- @meta_title ||= "Bradley Staples"
+- @meta_description ||= "Playground of Bradley Staples, software engineer, ginger, and geek."
+- styleManifest = defined?(cssManifest) ? cssManifest : 'application'
+
+%meta{:charset => "utf-8"}
+%title= @meta_title
+%meta{:name => 'description', :content => @meta_description}
+%meta{:name => 'author', :content => 'Bradley Staples'}
+%link{:rel => "image_src", :href => '#'}
+=javascript_include_tag("//use.typekit.net/mgn4uat.js")
+:javascript
+  try{Typekit.load();}catch(e){}
+= stylesheet_link_tag("manifests/#{styleManifest}", :media => "all")

@@ -1,0 +1,14 @@
+.contact-form {
+  input, textarea {
+    width: 50%;
+    margin-left: 5%;
+  }
+  textarea {
+    min-height: px2em(200px);
+  }
+  label {
+    width: 40%;
+    text-align: right;
+    vertical-align: top;
+  }
+}
