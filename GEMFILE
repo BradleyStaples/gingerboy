@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.12'
 gem 'mysql2'
 gem 'jquery-rails'
-gem 'jquery-rails'
+gem "awesome_print", "~> 1.1.0" # http://rubygems.org/gems/awesome_print
 gem 'underscore-rails' # https://github.com/rweng/underscore-rails
 gem 'annotate', ">=2.5.0" # https://github.com/ctran/annotate_models
 

@@ -1,7 +1,3 @@
-# global $:false, _:false
-
-GingerBoy = {}
-
 class GingerBoy.Base
   "use strict"
 

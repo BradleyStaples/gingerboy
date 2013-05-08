@@ -13,4 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-/.idea/*
+
+# ignore rubymine workspace files
+/.idea
+
+# ignore compiled coffeescript maps
+/public/assets/source_maps

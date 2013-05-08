@@ -2,30 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be7efda8-f261-4d2e-9d62-b64738556c8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/resume.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/projects/_fontbeast.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/common.css.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/home/resume.haml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/projects/_cards.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/projects/_randle.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jquery.lettering.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/manifests/project-cards.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/manifests/project-cards.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/manifests/project-randle.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/manifests/project-randle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/projects/randle.js.coffee" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/projects.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/home.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/home.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/projects/fontbeast.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/projects/fontbeast.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/rails.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/controls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/dragdrop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/effects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/prototype.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/.gitkeep" afterPath="$PROJECT_DIR$/app/assets/javascripts/projects/cards.js.coffee" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/assets/.gitkeep" afterPath="$PROJECT_DIR$/app/assets/stylesheets/projects/cards.css.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/log/.gitkeep" afterPath="$PROJECT_DIR$/app/assets/stylesheets/projects/randle.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_navigation.haml" afterPath="$PROJECT_DIR$/app/views/shared/_navigation.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/manifests/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/manifests/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/base.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/base.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/projects/fontbeast.coffee" afterPath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/projects/fontbeast.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/projects/fontbeast.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/projects/fontbeast.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/projects/fontbeast.map" afterPath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/projects/fontbeast.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/home.coffee" afterPath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/home.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_scripts.haml" afterPath="$PROJECT_DIR$/app/views/shared/_scripts.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/cookie_verification_secret.rb" afterPath="$PROJECT_DIR$/config/initializers/cookie_verification_secret.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/home.map" afterPath="$PROJECT_DIR$/public/assets/source_maps/app/assets/javascripts/home.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.haml" afterPath="$PROJECT_DIR$/app/views/home/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/index.haml" afterPath="$PROJECT_DIR$/app/views/projects/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/manifests/project-fontbeast.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/manifests/project-fontbeast.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/new_rails_defaults.rb" afterPath="$PROJECT_DIR$/config/initializers/new_rails_defaults.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/projects.haml" afterPath="$PROJECT_DIR$/app/views/home/projects.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gingerboydev.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367957210198" ignored="false" />
+    <file path="/Dummy.txt" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368042372412" ignored="false" />
     <file path="/database.yml" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1365652847153" ignored="false" />
     <file path="/a.dummy" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1365657226502" ignored="false" />
     <file path="/application.html.erb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1365656015776" ignored="false" />
@@ -37,23 +48,23 @@
     <file path="/home_controller.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367964636785" ignored="false" />
     <file path="/application.css.scss" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367983867784" ignored="false" />
     <file path="/home.css.scss" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1366666538707" ignored="false" />
-    <file path="/home.js.coffee" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367987424398" ignored="false" />
+    <file path="/home.js.coffee" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367992456407" ignored="false" />
     <file path="/_navigation.haml" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367984872558" ignored="false" />
     <file path="/routes.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367957236983" ignored="false" />
     <file path="/mixins.css.scss" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1365742662496" ignored="false" />
-    <file path="/projects.haml" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367987871873" ignored="false" />
+    <file path="/projects.haml" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367991660310" ignored="false" />
     <file path="/contact.haml" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1366666782236" ignored="false" />
     <file path="/projects.css.scss" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1366651930646" ignored="false" />
     <file path="/portfolio.haml" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367964763073" ignored="false" />
     <file path="/contact.css.scss" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1366667636071" ignored="false" />
-    <file path="$USER_HOME$/Work/Peeko/public/javascripts/g2/ListingsNew/price_selector.js" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367971087681" ignored="false" />
+    <file path="$USER_HOME$/Work/Peeko/public/javascripts/g2/ListingsNew/price_selector.js" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368045018830" ignored="false" />
     <file path="$USER_HOME$/Work/Peeko/public/javascripts/UsersShow/purchase_order_dialog.jaml" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367952092361" ignored="false" />
     <file path="/seeds.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367964293001" ignored="false" />
     <file path="/20130507195527_create_projects.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367956734484" ignored="false" />
     <file path="/project.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367958350889" ignored="false" />
     <file path="/projects_controller.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367973054498" ignored="false" />
     <file path="/20130507202915_add_images_and_text_to_projects.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367958858618" ignored="false" />
-    <file path="/.gitignore" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367974691782" ignored="false" />
+    <file path="/.gitignore" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368043466592" ignored="false" />
     <file path="/price_selector.js" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367970583313" ignored="false" />
     <file path="$USER_HOME$/Work/Peeko/config/routes.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367971800253" ignored="false" />
     <file path="$USER_HOME$/Work/Peeko/public/javascripts/g2/Transactions/transaction_details_page.js" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367971087681" ignored="false" />
@@ -63,6 +74,16 @@
     <file path="/fontbeast.js.coffee" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367986432899" ignored="false" />
     <file path="/base.css.scss" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367988316234" ignored="false" />
     <file path="/_fontbeast.haml" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367987580924" ignored="false" />
+    <file path="/project-cards.css.scss" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367991865194" ignored="false" />
+    <file path="/project-randle.css.scss" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1367991869721" ignored="false" />
+    <file path="/randle.js.coffee" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368042047973" ignored="false" />
+    <file path="$USER_HOME$/Work/Peeko/public/javascripts/g2/ListingsNew/page.js" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368045015538" ignored="false" />
+    <file path="/page.js" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368030295027" ignored="false" />
+    <file path="/_scripts.haml" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368042140730" ignored="false" />
+    <file path="/application.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368042530620" ignored="false" />
+    <file path="/cookie_verification_secret.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368043175683" ignored="false" />
+    <file path="/new_rails_defaults.rb" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368044573908" ignored="false" />
+    <file path="/Gemfile" changelist="be7efda8-f261-4d2e-9d62-b64738556c8e" time="1368045219217" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,37 +103,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="projects.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/projects.haml">
+      <file leaf-file-name="randle.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/projects/randle.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="59" selection-start="384" selection-end="384" vertical-scroll-proportion="-5.3333335">
+            <state line="134" column="0" selection-start="3824" selection-end="4308" vertical-scroll-proportion="-43.854546">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/base.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="20" selection-start="3063" selection-end="3063" vertical-scroll-proportion="0.602454">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/common.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="11" selection-start="811" selection-end="822" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.js.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="27" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_scripts.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_scripts.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="-8.666667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project-randle.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/manifests/project-randle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="25" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cookie_verification_secret.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/cookie_verification_secret.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="42" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_rails_defaults.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/new_rails_defaults.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".rbenv-version" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.rbenv-version">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="32" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,29 +204,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/manifests/project-fontbeast.js" />
-        <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/projects/fontbeast.css.scss" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/common.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/index.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/manifests/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/manifests/project-fontbeast.css.scss" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_navigation.haml" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/projects/fontbeast.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/projects/index.haml" />
         <option value="$PROJECT_DIR$/app/views/projects/_fontbeast.haml" />
-        <option value="$PROJECT_DIR$/app/views/home/projects.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/base.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/projects.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/manifests/project-cards.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/manifests/project-randle.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/manifests/project-cards.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/shared/_scripts.haml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/projects/randle.js.coffee" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/cookie_verification_secret.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/new_rails_defaults.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/manifests/project-randle.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1049" />
-    <option name="height" value="964" />
+    <option name="width" value="1675" />
+    <option name="height" value="1514" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -187,7 +255,6 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -230,7 +297,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,11 +311,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GingerBoyDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GingerBoyDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GingerBoyDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GingerBoyDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -291,10 +390,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -307,64 +402,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -387,58 +424,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GingerBoyDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,16 +521,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Rails.Development: gingerboydev">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -817,14 +803,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1049" height="964" extended-state="0" />
+    <frame x="0" y="22" width="1675" height="1514" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21734795" sideWeight="0.6708861" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13566606" sideWeight="0.6708861" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -903,114 +889,116 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/base.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_scripts.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="-8.666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="0.05176132">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="8" selection-start="711" selection-end="711" vertical-scroll-proportion="0.30351907">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/422.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="15" selection-start="189" selection-end="189" vertical-scroll-proportion="0.038820993">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+        <state line="6" column="23" selection-start="313" selection-end="313" vertical-scroll-proportion="0.07764199">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
+    <entry file="file://$PROJECT_DIR$/.rbenv-version">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="280" selection-end="280" vertical-scroll-proportion="-2.0">
+        <state line="1" column="0" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/manifests/project-fontbeast.css.scss">
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+        <state line="6" column="25" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/cookie_verification_secret.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+        <state line="6" column="42" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/manifests/application.css.scss">
+    <entry file="file://$PROJECT_DIR$/config/initializers/new_rails_defaults.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="104" selection-end="104" vertical-scroll-proportion="0.085612364">
+        <state line="21" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_navigation.haml">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.1990172">
+        <state line="10" column="32" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/projects.js.coffee">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/projects/randle.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="134" column="0" selection-start="3824" selection-end="4308" vertical-scroll-proportion="-43.854546">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/manifests/project-randle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="83" selection-end="163" vertical-scroll-proportion="0.06633907">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/projects/fontbeast.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/mixins.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.17122473">
-          <folding />
+        <state line="4" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/_fontbeast.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="10" selection-end="10" vertical-scroll-proportion="0.044226043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/common.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="11" selection-start="811" selection-end="822" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="36" selection-start="77" selection-end="77" vertical-scroll-proportion="0.022113021">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/projects.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="59" selection-start="384" selection-end="384" vertical-scroll-proportion="-5.3333335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/base.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="20" selection-start="3063" selection-end="3063" vertical-scroll-proportion="0.602454">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

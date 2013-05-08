@@ -3,7 +3,10 @@
     - @projects.each do |p|
       %li
         %h2.margin-none.text-large.float-left
-          %a{:href => project_url(p.slug) } #{p.name}
+          - if !p.url.nil?
+            %a{:href => p.url, :target => '_blank' } #{p.name}
+          - else
+            %a{:href => project_url(p.slug) } #{p.name}
         .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip
           i
           .project-tooltip-contents.padding-small.text-left.hidden
