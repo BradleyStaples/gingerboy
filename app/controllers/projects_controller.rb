@@ -1,5 +1,11 @@
 class ProjectsController < ApplicationController
+
+  layout "projects"
+
   def index
-    @project = Project.find_by_slug(params[:slug].to_s)
+    slug = params[:slug].to_s
+    @project = Project.find_by_slug(slug)
+    @manifest = "project-#{slug}"
   end
+
 end
