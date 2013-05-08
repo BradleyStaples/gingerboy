@@ -77,9 +77,9 @@ hr {
 .contents-wrapper {
   background-color: rgba(255, 255, 255, .7);
   @include border-radius(.5em);
-  border: .313em solid #fff;
+  border: px2em(5px) solid #fff;
   @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(8px));
-  width: px2em(300px);
+  width: 80%;
   min-height: px2em(300px);
 }
 
@@ -92,38 +92,90 @@ hr {
     display: inline-block;
   }
 }
-.hidden {display:none;}
-.no-list {list-style: none;}
-.block {display: block;}
-.inline {display: inline;}
-.inline-block {display: inline-block;}
-.margin-none {margin: 0;}
-.margin-large {margin: px2em(15px);}
-.margin-medium {margin: px2em(10px);}
-.margin-small {margin: px2em(5px);}
-.padding-none {padding: 0;}
-.padding-large {padding: px2em(15px);}
-.padding-medium {padding: px2em(10px);}
-.padding-small {padding: px2em(15px);}
-.centered {margin-left: auto; margin-right: auto;}
-.clear-both {clear: both;}
-.clear-left {clear: left;}
-.clear-right {clear: right}
-.float-left {float: left;}
-.float-right {float: right;}
-.text-left {text-align: left;}
-.text-right {text-align: right;}
-.text-center {text-align: center;}
-.text-flush {text-align: justify;}
-.text-tiny {font-size: px2em(14px); line-height:px2em(19px)}
-.text-small {font-size: px2em(16px); line-height:px2em(21px)}
-.text-large {font-size: px2em(20px); line-height:px2em(25px)}
-.text-huge {font-size: px2em(24px); line-height:px2em(29px)}
-.text-light {font-weight: 300;}
-.text-dense {font-weight: 400;}
-.text-bold {font-weight: 700;}
-.text-emphasis {font-style: italic;}
-.text-notice {color: $defaultOrange;}
-.text-muted {color: #bbb;}
-.text-serif {font-family: Georgia, Times, serif;}
-.text-mono {font-family: Courier, 'Courier New', monospace;}
+
+.info-tooltip {
+  text-align: center;
+  display: inline-block;
+  height: px2em(20px);
+  width: px2em(20px);
+  border-radius: 50%;
+  background-color: lighten($defaultOrange, 10%);
+  color: #fff;
+  @include transition-property(background-color);
+  @include transition-duration(.5s);
+  cursor: pointer;
+  & :hover {
+    background-color: darken($defaultOrange, 5%);
+  }
+}
+
+.project-tooltip {
+  margin-top: 7px;
+  margin-left: 5px;
+  position: relative;
+  .project-tooltip-contents.hidden {
+    opacity: 0;
+    @include transition-property(opacity);
+    @include transition-duration(.5s);
+  }
+  .project-tooltip-contents {
+    opacity: 1;
+    @include border-radius(.5em);
+    z-index: 5;
+    width: 400px;
+    overflow: hidden;
+    background: #fff;
+    border: px2em(2px) solid $defaultOrange;
+    @include box-shadow($defaultBrown 0 0 px2em(5px));
+    position: absolute;
+    top: -80px;
+    left: 0px;
+    color: $defaultBrown;
+    cursor: default;
+  }
+}
+
+
+@media only screen and (min-width:px2em(480px)) {
+  .contents-wrapper {
+    width: 90%;
+    border: px2em(7px) solid #fff;
+    @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(10px));
+  }
+  .intro-note {
+    max-width: px2em(400px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width:720px) {
+  .contents-wrapper {
+    max-width: px2em(680px);
+    border: px2em(10px) solid #fff;
+    @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(13px));
+  }
+}
+
+@media only screen and (min-width:860px) {
+  .contents-wrapper {
+    max-width: px2em(820px);
+  }
+}
+
+@media only screen and (min-width:960px) {
+  .contents-wrapper {
+    max-width: px2em(920px);
+    font-size: px2em(20px);
+  }
+}
+
+@media only screen and (min-width:1050px) {
+  .contents-wrapper {
+    max-width: px2em(1000px);
+  }
+}
+
+@media only screen and (min-width:1350px) {
+
+}

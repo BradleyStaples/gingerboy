@@ -1,0 +1,35 @@
+.hidden {display:none;}
+.no-list {list-style: none;}
+.block {display: block;}
+.inline {display: inline;}
+.inline-block {display: inline-block;}
+.margin-none {margin: 0;}
+.margin-large {margin: px2em(15px);}
+.margin-medium {margin: px2em(10px);}
+.margin-small {margin: px2em(5px);}
+.padding-none {padding: 0;}
+.padding-large {padding: px2em(15px);}
+.padding-medium {padding: px2em(10px);}
+.padding-small {padding: px2em(15px);}
+.centered {margin-left: auto; margin-right: auto;}
+.clear-both {clear: both;}
+.clear-left {clear: left;}
+.clear-right {clear: right}
+.float-left {float: left;}
+.float-right {float: right;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.text-flush {text-align: justify;}
+.text-tiny {font-size: px2em(14px); line-height:px2em(19px)}
+.text-small {font-size: px2em(16px); line-height:px2em(21px)}
+.text-large {font-size: px2em(20px); line-height:px2em(25px)}
+.text-huge {font-size: px2em(24px); line-height:px2em(29px)}
+.text-light {font-weight: 300;}
+.text-dense {font-weight: 400;}
+.text-bold {font-weight: 700;}
+.text-emphasis {font-style: italic;}
+.text-notice {color: $defaultOrange;}
+.text-muted {color: #bbb;}
+.text-serif {font-family: Georgia, Times, serif;}
+.text-mono {font-family: Courier, 'Courier New', monospace;}
