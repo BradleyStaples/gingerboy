@@ -10,7 +10,7 @@
           - if !p.url.nil?
             %a{:href => p.url, :target => '_blank' } #{p.name}
           - else
-            %a{:href => "/projects/#{p.slug}" } #{p.name}
+            %a{:href => "/projects/#{p.slug}/" } #{p.name}
         .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip
           i
           .project-tooltip-contents.padding-small.text-left.hidden
