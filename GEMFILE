@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
+# Tell Heroku what ruby to run.
+ruby "1.9.3"
+
 gem 'rails', '3.2.12'
-gem 'mysql2'
+gem 'pg'
 gem 'jquery-rails'
 gem "awesome_print", "~> 1.1.0" # http://rubygems.org/gems/awesome_print
 gem 'underscore-rails' # https://github.com/rweng/underscore-rails
@@ -26,6 +29,11 @@ end
 
 group :test, :development do
   gem 'jasmine-rails' # https://github.com/searls/jasmine-rails
+end
+
+# Use 'thin' in production
+group :production do
+  gem 'thin'
 end
 
 
