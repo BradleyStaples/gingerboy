@@ -36,4 +36,3 @@ group :production do
   gem 'thin'
 end
 
-
