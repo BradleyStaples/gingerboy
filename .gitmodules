@@ -1,0 +1,3 @@
+[submodule "public/projects/minesweeper"]
+	path = public/projects/minesweeper
+	url = git@github.com:BradleyStaples/minesweeper.git
