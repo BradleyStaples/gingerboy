@@ -1,7 +1,11 @@
 .contents-wrapper.padding-large.centered
   %ul.no-list.margin-none.padding-none
     - @projects.each do |p|
-      %li
+      %li.clear-right.padding-small
+        - if !p.github.nil?
+          %span.text-tiny.float-right
+            = surround '[', ']' do
+              %a{:href => p.github, :target => '_blank' } GitHub repo
         %h2.margin-none.text-large.float-left
           - if !p.url.nil?
             %a{:href => p.url, :target => '_blank' } #{p.name}
@@ -16,5 +20,3 @@
           %img{:src => image_path(p.thumb)}
         %p.margin-small
           #{p.blurb}
-        - if !p.github.nil?
-          %a{:href => p.github, :target => '_blank' } GitHub Repository
