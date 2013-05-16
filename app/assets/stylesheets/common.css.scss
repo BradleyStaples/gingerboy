@@ -12,6 +12,16 @@
 .padding-medium {padding: px2em(10px);}
 .padding-small {padding: px2em(15px);}
 .centered {margin-left: auto; margin-right: auto;}
+.clearfix {
+  *display: inline-block;
+  &:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
 .clear-both {clear: both;}
 .clear-left {clear: left;}
 .clear-right {clear: right}

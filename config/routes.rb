@@ -8,6 +8,5 @@ GingerBoyDev::Application.routes.draw do
   match "/contacted" => "home#contacted", :as => :contacted
   match "/portfolio" => "home#portfolio", :as => :portfolio
   match "/projects" => "home#projects", :as => :projects
-  match '/projects/:slug' => 'projects#index', :as => :project
 
 end
