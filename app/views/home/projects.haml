@@ -16,3 +16,5 @@
           %img{:src => image_path(p.thumb)}
         %p.margin-small
           #{p.blurb}
+        - if !p.github.nil?
+          %a{:href => p.github, :target => '_blank' } GitHub Repository

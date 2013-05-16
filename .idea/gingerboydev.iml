@@ -25,6 +25,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.12, rbenv: 1.9.3-p194) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="annotate (v2.5.0, rbenv: 1.9.3-p194) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.2, rbenv: 1.9.3-p194) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="awesome_print (v1.1.0, rbenv: 1.9.3-p194) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.4, rbenv: 1.9.3-p194) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.2.3, rbenv: 1.9.3-p194) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.3.9, rbenv: 1.9.3-p194) [gem]" level="application" />
