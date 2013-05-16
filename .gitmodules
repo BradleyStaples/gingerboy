@@ -4,3 +4,6 @@
 [submodule "public/projects/cards"]
 	path = public/projects/cards
 	url = git@github.com:BradleyStaples/Remember-The-Ginger.git
+[submodule "public/projects/fontbeast"]
+	path = public/projects/fontbeast
+	url = git@github.com:BradleyStaples/FontBeast.git
