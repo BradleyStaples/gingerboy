@@ -6,6 +6,7 @@ ruby "1.9.3"
 gem 'rails', '3.2.12'
 gem 'pg'
 gem 'jquery-rails'
+gem 'haml-rails'
 gem "awesome_print", "~> 1.1.0" # http://rubygems.org/gems/awesome_print
 gem 'underscore-rails' # https://github.com/rweng/underscore-rails
 gem 'annotate', ">=2.5.0" # https://github.com/ctran/annotate_models
@@ -18,7 +19,6 @@ group :assets do
 end
 
 group :development do
-  gem 'haml-rails'
   gem "jshint_on_rails", "~> 1.0.2" #https://github.com/bgouveia/jshint_on_rails
   gem 'coffee-rails-source-maps' # https://github.com/markbates/coffee-rails-source-maps
 end
