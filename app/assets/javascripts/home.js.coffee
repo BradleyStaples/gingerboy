@@ -10,6 +10,7 @@ class GingerBoy.Base
     @projectTooltip = $ '.project-tooltip'
     @projectTooltipContents = '.project-tooltip-contents'
     @body.on 'click', @projectTooltip, (event) => @openProjecTooltip event
+    @fadeOutFlashNotice()
 
   openProjecTooltip: (event) ->
     @closeProjectTooltip(true)
@@ -23,6 +24,11 @@ class GingerBoy.Base
     else
       @currentProjectTooltip.find(@projectTooltipContents).addClass @hiddenClass
     @currentProjectTooltip = null
+
+  fadeOutFlashNotice: () ->
+    setTimeout ()->
+      $('.flash-info').addClass('fade-out');
+    , 3000
 
 $ ->
   "use strict"

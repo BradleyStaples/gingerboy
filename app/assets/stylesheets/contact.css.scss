@@ -1,7 +1,9 @@
 .contact-form {
+  width: px2em(350px);
   input, textarea {
     width: 50%;
     margin-left: 5%;
+    border: 1px solid #ccc;
   }
   textarea {
     min-height: px2em(200px);
@@ -11,4 +13,20 @@
     text-align: right;
     vertical-align: top;
   }
+  .field_with_errors {
+    label {
+      color: $errorColor;
+    }
+    input, textarea {
+      border: 1px solid $errorColor;
+    }
+    display: inline;
+  }
+  .error_messages {
+    color: $errorColor;
+    ul {
+      list-style: none;
+    }
+  }
+
 }

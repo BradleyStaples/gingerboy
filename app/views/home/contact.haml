@@ -1,19 +1,42 @@
 .contents-wrapper.centered
-  %p
-    social media here
-  %form.contact-form.margin-small.text-small{:action => contacted_path, :method => 'post'}
-    %label.inline-block
-      name
-    %input.inline-block{:name => 'name'}
-    %label.inline-block
-      email
-    %input.inline-block{:name => 'email'}
-    %label.inline-block
-      phone
-      %span.text-muted< (optional)
-    %input.inline-block{:name => 'phone'}
-    %label.inline-block
-      message
-    %textarea.inline-block{:name => 'message'}
-    %button.btn.btn-submit.float-right.margin-medium.padding-small<
-      Submit
+  .clearfix
+    =form_for @message, :url => contacted_path, :html => {:class => "contact-form margin-small text-small float-right"} do |f|
+    - if flash[:alert]
+      .flash-info.text-small.text-bold.text-center.centered.padding-small
+        =flash[:alert]
+    - else
+      - if flash[:notice]
+        .flash-warning.text-small.text-bold.text-center.centered.padding-small
+          =flash[:notice]
+      -if @message.errors.any?
+        .error_messages.text-small.padding-small.text-center
+          %p="#{pluralize(@message.errors.count, "error")} prohibited this message from being sent:"
+          %ul
+            - @message.errors.full_messages.each do |msg|
+              %li=msg
+      .field
+        =f.label :name, :class => 'inline-block'
+        =f.text_field :name, :class => 'inline-block'
+      .field
+        =f.label :email, :class => 'inline-block'
+        =f.text_field :email, :class => 'inline-block'
+      .field
+        =f.label :phone, "Phone <span class='text-muted'>(optional)</span>".html_safe, :class => 'inline-block'
+        =f.text_field :phone, :class => 'inline-block'
+      .field
+        =f.label :subject, :class => 'inline-block'
+        =f.text_field :subject, :class => 'inline-block'
+      .field
+        =f.label :body, :class => 'inline-block'
+        =f.text_area :body, :rows => 5, :class => 'inline-block'
+      .actions
+        =f.submit "Send Message", :class => 'btn btn-submit float-right margin-medium padding-small'
+    .padding-small.margin-small.float-left
+      %h2
+        Find me on:
+      %ul
+        %li= link_to 'Facebook', 'https://www.facebook.com/bradley.staples'
+        %li= link_to 'Twitter', 'https://twitter.com/bradleystaples'
+        %li= link_to 'Github', 'https://github.com/bradleystaples'
+        %li= link_to 'LinkedIn', 'http://www.linkedin.com/in/bradleystaples'
+        %li= link_to 'jsFiddle', 'http://jsfiddle.net/user/bradleystaples'
