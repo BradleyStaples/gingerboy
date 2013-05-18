@@ -142,6 +142,10 @@ hr {
   @include border-radius(px2em(10px));
   @include transition-property(opacity, padding);
   @include transition-duration(2s);
+  &.fade-out {
+    opacity: 0;
+    padding: 0;
+  }
 }
 .flash-info {
     color: #fff;
@@ -152,10 +156,6 @@ hr {
   color: darken($errorColor, 20%);
   background-color: lighten($errorColor, 20%);
   @include box-shadow(rgba(darken($errorColor, 20%),0.2) 0 0 px2em(8px));
-  &.fade-out {
-    opacity: 0;
-    padding: 0;
-  }
 }
 
 @media only screen and (min-width:px2em(480px)) {

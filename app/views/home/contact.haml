@@ -1,36 +1,34 @@
 .contents-wrapper.centered
   .clearfix
     =form_for @message, :url => contacted_path, :html => {:class => "contact-form margin-small text-small float-right"} do |f|
-    - if flash[:alert]
-      .flash-info.text-small.text-bold.text-center.centered.padding-small
-        =flash[:alert]
-    - else
-      - if flash[:notice]
-        .flash-warning.text-small.text-bold.text-center.centered.padding-small
-          =flash[:notice]
-      -if @message.errors.any?
-        .error_messages.text-small.padding-small.text-center
-          %p="#{pluralize(@message.errors.count, "error")} prohibited this message from being sent:"
-          %ul
-            - @message.errors.full_messages.each do |msg|
-              %li=msg
-      .field
-        =f.label :name, :class => 'inline-block'
-        =f.text_field :name, :class => 'inline-block'
-      .field
-        =f.label :email, :class => 'inline-block'
-        =f.text_field :email, :class => 'inline-block'
-      .field
-        =f.label :phone, "Phone <span class='text-muted'>(optional)</span>".html_safe, :class => 'inline-block'
-        =f.text_field :phone, :class => 'inline-block'
-      .field
-        =f.label :subject, :class => 'inline-block'
-        =f.text_field :subject, :class => 'inline-block'
-      .field
-        =f.label :body, :class => 'inline-block'
-        =f.text_area :body, :rows => 5, :class => 'inline-block'
-      .actions
-        =f.submit "Send Message", :class => 'btn btn-submit float-right margin-medium padding-small'
+      - if flash[:alert]
+        .flash-info.text-small.text-bold.text-center.centered.padding-small
+          =flash[:alert]
+      - else
+        -if @message.errors.any?
+          .flash-warning.text-small.text-bold.text-center.centered.padding-small
+            Please fix the #{pluralize(@message.errors.count, "error")} and resubmit.
+          .error_messages.text-small.padding-small.text-center
+            %ul
+              - @message.errors.full_messages.each do |msg|
+                %li=msg
+        .field
+          =f.label :name, :class => 'inline-block'
+          =f.text_field :name, :class => 'inline-block'
+        .field
+          =f.label :email, :class => 'inline-block'
+          =f.text_field :email, :class => 'inline-block'
+        .field
+          =f.label :phone, "Phone <span class='text-muted'>(optional)</span>".html_safe, :class => 'inline-block'
+          =f.text_field :phone, :class => 'inline-block'
+        .field
+          =f.label :subject, :class => 'inline-block'
+          =f.text_field :subject, :class => 'inline-block'
+        .field
+          =f.label :body, :class => 'inline-block'
+          =f.text_area :body, :rows => 5, :class => 'inline-block'
+        .actions
+          =f.submit "Send Message", :class => 'btn btn-submit float-right margin-medium padding-small'
     .padding-small.margin-small.float-left
       %h2
         Find me on:

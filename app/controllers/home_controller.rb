@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+
+
   def index
   end
 
@@ -24,7 +26,7 @@ class HomeController < ApplicationController
       flash[:alert] = "Message was successfully sent."
       redirect_to(contact_path)
     else
-      flash[:notice] = "Please fix the errors and resubmit."
+      # re-render contact form. errors in @message are detected there
       render :contact
     end
   end

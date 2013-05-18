@@ -10,6 +10,7 @@ gem 'haml-rails'
 gem "awesome_print", "~> 1.1.0" # http://rubygems.org/gems/awesome_print
 gem 'underscore-rails' # https://github.com/rweng/underscore-rails
 gem 'annotate', ">=2.5.0" # https://github.com/ctran/annotate_models
+gem 'postmark-rails' #https://devcenter.heroku.com/articles/postmark
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
