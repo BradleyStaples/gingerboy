@@ -6,5 +6,5 @@ $errorColor: #dB3d31;
 $baseFontSize: 18px;
 
 @function px2em($target, $parent: $baseFontSize) {
-  @return $target / $parent + 0em;
+  @return ($target / $parent) + 0em;
 }

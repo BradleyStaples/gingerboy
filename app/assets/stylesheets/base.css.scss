@@ -97,52 +97,6 @@ hr {
   min-width: px2em(250px);
 }
 
-@media only screen and (min-width:px2em(480px)) {
-  .contents-wrapper {
-    width: 90%;
-    border: px2em(7px) solid #fff;
-    @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(10px));
-  }
-  .intro-note {
-    max-width: px2em(400px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .popover {
-    min-width: px2em(350px);
-  }
-}
-
-@media only screen and (min-width:720px) {
-  .contents-wrapper {
-    max-width: px2em(680px);
-    border: px2em(10px) solid #fff;
-    @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(13px));
-  }
-  .popover {
-    min-width: px2em(450px);
-  }
-}
-
-@media only screen and (min-width:860px) {
-  .contents-wrapper {
-    max-width: px2em(820px);
-  }
-}
-
-@media only screen and (min-width:960px) {
-  .contents-wrapper {
-    max-width: px2em(920px);
-    font-size: px2em(20px);
-  }
-}
-
-@media only screen and (min-width:1050px) {
-  .contents-wrapper {
-    max-width: px2em(1000px);
-  }
-}
-
-@media only screen and (min-width:1350px) {
-
+.footer-text {
+  display: block;
 }

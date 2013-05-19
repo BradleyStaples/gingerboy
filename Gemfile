@@ -8,6 +8,7 @@ gem 'pg'
 gem 'thin'
 gem "awesome_print", "~> 1.1.0" # http://rubygems.org/gems/awesome_print
 gem 'annotate', ">=2.5.0" # https://github.com/ctran/annotate_models
+gem 'simple_form' # https://github.com/plataformatec/simple_form
 
 group :assets do
   gem 'haml-rails'

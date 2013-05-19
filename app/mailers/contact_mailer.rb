@@ -1,7 +1,7 @@
 class ContactMailer < ActionMailer::Base
 
-  default :from => "me@bradleystapl.es"
-  default :to => "me@bradleystapl.es"
+  default :from => "meekbarbrian@gmail.com"
+  default :to => "the.bradley.staples@gmail.com"
 
   def form_mail(message)
     @message = message
