@@ -9,4 +9,4 @@
 	url = git://github.com/BradleyStaples/FontBeast.git
 [submodule "public/projects/randle"]
 	path = public/projects/randle
-	url = git@github.com:BradleyStaples/Randle.git
+	url = git://github.com/BradleyStaples/Randle.git
