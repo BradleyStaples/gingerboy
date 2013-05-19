@@ -9,7 +9,7 @@ class HomeController < ApplicationController
   end
 
   def portfolio
-    @sites = Portfolio.all
+    @sites = Portfolio.all(:order => :display_order)
   end
 
 
