@@ -8,7 +8,7 @@
             = surround '[', ']' do
               %a{:href => p.github, :target => '_blank' } GitHub repo
         %h2.margin-none.text-large.float-left
-          %a{:href => projectUrl} #{p.name}
+          = link_to p.name, projectUrl, :target => "_blank"
         .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip{:"data-title" => p.name, :"data-content" => p.description.html_safe}
           i
         .clear-left
