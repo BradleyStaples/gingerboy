@@ -5,29 +5,28 @@ class GingerBoy.Base
     @init()
 
   init: () ->
-    @body = $ 'body'
-    @hiddenClass = 'hidden'
-    @projectTooltip = $ '.project-tooltip'
-    @projectTooltipContents = '.project-tooltip-contents'
-    @body.on 'click', @projectTooltip, (event) => @openProjecTooltip event
     @fadeOutFlashNotice()
+    @initPopovers()
 
-  openProjecTooltip: (event) ->
-    @closeProjectTooltip(true)
-    @currentProjectTooltip = $ event.target
-    @currentProjectTooltip.find(@projectTooltipContents).removeClass @hiddenClass
-    @body.one 'click', () => @openProjecTooltip
+  initPopovers: () ->
+    @popoverLinks = $('.project-tooltip')
+    popoverOptions =
+      html: true
+      placement: 'right'
+      trigger: 'click'
+    @popoverLinks.popover(popoverOptions)
+    @popoverLinks.click (event) => @handlePopover(event)
+    $('body').on 'click', '.btn-popover', (event) ->
+      $('.btn-popover').parents('.popover').siblings('.project-tooltip').popover('hide')
 
-  closeProjectTooltip: (closeAll) ->
-    if closeAll
-      $(@projectTooltipContents).addClass @hiddenClass
-    else
-      @currentProjectTooltip.find(@projectTooltipContents).addClass @hiddenClass
-    @currentProjectTooltip = null
+  handlePopover : (event) ->
+    target = event.target
+    @popoverLinks.not(target).popover('hide')
+    $('.popover-title').append('<button class="btn btn-mini btn-popover float-right">&times;</button>')
 
   fadeOutFlashNotice: () ->
     setTimeout ()->
-      $('.flash-info').addClass('fade-out');
+      $('.flash-info').addClass 'fade-out'
     , 3000
 
 $ ->

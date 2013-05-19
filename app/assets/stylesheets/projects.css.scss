@@ -1,3 +1,24 @@
-// Place all the styles related to the Projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.info-tooltip {
+  text-align: center;
+  display: inline-block;
+  height: px2em(22px);
+  width: px2em(22px);
+  border-radius: 50%;
+  background-color: lighten($blue, 15%);
+  text-indent: px2em(-2px);
+  padding-top: px2em(2px);
+  @include box-shadow(rgba(0,0,0,0.1) 0 0 px2em(3px));
+  color: #fff;
+  @include transition-property(background-color);
+  @include transition-duration(.5s);
+  cursor: pointer;
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+.project-tooltip {
+  margin-top: 5px;
+  margin-left: 5px;
+  position: relative;
+}

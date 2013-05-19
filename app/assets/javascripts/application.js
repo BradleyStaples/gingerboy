@@ -1,3 +1,4 @@
 //= require jquery
-//= require underscore
+//= require bootstrap-tooltip
+//= require bootstrap-popover
 //= require home

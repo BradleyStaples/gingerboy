@@ -1,20 +1,16 @@
 .contents-wrapper.padding-large.centered
   %ul.no-list.margin-none.padding-none
     - @projects.each do |p|
+      - projectUrl = p.url.nil? ? "/projects/#{p.slug}/" : p.url
       %li.clear-right.padding-small
         - if !p.github.nil?
           %span.text-tiny.float-right
             = surround '[', ']' do
               %a{:href => p.github, :target => '_blank' } GitHub repo
         %h2.margin-none.text-large.float-left
-          - if !p.url.nil?
-            %a{:href => p.url, :target => '_blank' } #{p.name}
-          - else
-            %a{:href => "/projects/#{p.slug}/" } #{p.name}
-        .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip
+          %a{:href => projectUrl} #{p.name}
+        .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip{:"data-title" => p.name, :"data-content" => p.description.html_safe}
           i
-          .project-tooltip-contents.padding-small.text-left.hidden
-            #{p.description.html_safe}
         .clear-left
         - if !p.thumb.nil?
           %img{:src => image_path(p.thumb)}

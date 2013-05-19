@@ -13,20 +13,43 @@
     text-align: right;
     vertical-align: top;
   }
-  .field_with_errors {
-    label {
-      color: $errorColor;
-    }
-    input, textarea {
-      border: 1px solid $errorColor;
-    }
-    display: inline;
-  }
-  .error_messages {
-    color: $errorColor;
-    ul {
-      list-style: none;
-    }
-  }
+}
 
+.field_with_errors {
+  label {
+    color: $errorColor;
+  }
+  input, textarea {
+    border: 1px solid $errorColor;
+  }
+  display: inline;
+}
+.error_messages {
+  color: $errorColor;
+  ul {
+    list-style: none;
+  }
+}
+
+.flash-info, .flash-warning {
+  width: px2em(350px);
+  margin-top: px2em(15px);
+  margin-bottom: px2em(15px);
+  @include border-radius(px2em(10px));
+  @include transition-property(opacity, padding);
+  @include transition-duration(2s);
+  &.fade-out {
+    opacity: 0;
+    padding: 0;
+  }
+}
+.flash-info {
+  color: #fff;
+  background-color: #49afcd;
+  @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(8px));
+}
+.flash-warning {
+  color: darken($errorColor, 20%);
+  background-color: lighten($errorColor, 20%);
+  @include box-shadow(rgba(darken($errorColor, 20%),0.2) 0 0 px2em(8px));
 }

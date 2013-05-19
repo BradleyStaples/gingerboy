@@ -5,17 +5,17 @@ ruby "1.9.3"
 
 gem 'rails', '3.2.12'
 gem 'pg'
-gem 'jquery-rails'
-gem 'haml-rails'
+gem 'thin'
 gem "awesome_print", "~> 1.1.0" # http://rubygems.org/gems/awesome_print
-gem 'underscore-rails' # https://github.com/rweng/underscore-rails
 gem 'annotate', ">=2.5.0" # https://github.com/ctran/annotate_models
-gem 'postmark-rails' #https://devcenter.heroku.com/articles/postmark
 
 group :assets do
+  gem 'haml-rails'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'compass-rails'
+  gem 'bootstrap-sass', '~> 2.3.1.0' #https://github.com/thomas-mcdonald/bootstrap-sass
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'jquery-rails'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -31,9 +31,3 @@ end
 group :test, :development do
   gem 'jasmine-rails' # https://github.com/searls/jasmine-rails
 end
-
-# Use 'thin' in production
-group :production do
-  gem 'thin'
-end
-

@@ -93,69 +93,8 @@ hr {
   }
 }
 
-.info-tooltip {
-  text-align: center;
-  display: inline-block;
-  height: px2em(20px);
-  width: px2em(20px);
-  border-radius: 50%;
-  background-color: lighten($orange, 10%);
-  color: #fff;
-  @include transition-property(background-color);
-  @include transition-duration(.5s);
-  cursor: pointer;
-  & :hover {
-    background-color: darken($orange, 5%);
-  }
-}
-
-.project-tooltip {
-  margin-top: 7px;
-  margin-left: 5px;
-  position: relative;
-  .project-tooltip-contents.hidden {
-    opacity: 0;
-    @include transition-property(opacity);
-    @include transition-duration(.5s);
-  }
-  .project-tooltip-contents {
-    opacity: 1;
-    @include border-radius(.5em);
-    z-index: 5;
-    width: 400px;
-    overflow: hidden;
-    background: #fff;
-    border: px2em(2px) solid $orange;
-    @include box-shadow($brown 0 0 px2em(5px));
-    position: absolute;
-    top: -80px;
-    left: 0px;
-    color: $brown;
-    cursor: default;
-  }
-}
-
-.flash-info, .flash-warning {
-  width: px2em(350px);
-  margin-top: px2em(15px);
-  margin-bottom: px2em(15px);
-  @include border-radius(px2em(10px));
-  @include transition-property(opacity, padding);
-  @include transition-duration(2s);
-  &.fade-out {
-    opacity: 0;
-    padding: 0;
-  }
-}
-.flash-info {
-    color: #fff;
-    background-color: #49afcd;
-    @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(8px));
-}
-.flash-warning {
-  color: darken($errorColor, 20%);
-  background-color: lighten($errorColor, 20%);
-  @include box-shadow(rgba(darken($errorColor, 20%),0.2) 0 0 px2em(8px));
+.popover {
+  min-width: px2em(250px);
 }
 
 @media only screen and (min-width:px2em(480px)) {
@@ -169,6 +108,9 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
+  .popover {
+    min-width: px2em(350px);
+  }
 }
 
 @media only screen and (min-width:720px) {
@@ -176,6 +118,9 @@ hr {
     max-width: px2em(680px);
     border: px2em(10px) solid #fff;
     @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(13px));
+  }
+  .popover {
+    min-width: px2em(450px);
   }
 }
 
