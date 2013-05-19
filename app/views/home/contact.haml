@@ -1,6 +1,8 @@
 .contents-wrapper.centered
   .clearfix
     = simple_form_for(@message, :url => contacted_path, :html => {:class => 'contact-form form-vertical' }) do |f|
+      %h3.text-large.text-center.text-dense
+        Get in touch with me:
       - if flash[:alert]
         .alert.alert-info.fade.in.text-bold.text-center
           %button.close{:type => 'button', :'data-dismiss' => "alert"}
@@ -15,29 +17,21 @@
               %ul.error_messages
                 - @message.errors.full_messages.each do |msg|
                   %li=msg
-        .control-group.field
-          =f.label :name, :class => 'control-label'
+        .control-group
+          =f.label :name
           =f.text_field :name, :class => 'input-xlarge'
-        .control-group.field
-          =f.label :email, :class => 'control-label'
+        .control-group
+          =f.label :email
           =f.text_field :email, :class => 'input-xlarge'
-        .control-group.field
-          =f.label :phone, "Phone <span class='text-muted'>(optional)</span>".html_safe, :class => 'control-label'
-          =f.text_field :phone, :class => 'input-xlarge'
-        .control-group.field
-          =f.label :subject, :class => 'control-label'
+        .control-group
+          =f.label :phone, "Phone <span class='text-muted'>(optional)</span>".html_safe
+          =f.text_field :phone, :class => 'input-xlarge', hint: 'Optional.'
+        .control-group
+          =f.label :subject
           =f.text_field :subject, :class => 'input-xlarge'
-        .control-group.field
-          =f.label :body, :class => 'control-label'
+        .control-group
+          =f.label :body
           =f.text_area :body, :rows => 5, :class => 'input-xlarge'
         .control-group
           =f.submit "Send Message", :class => 'btn btn-small btn-primary'
-    .social-media.padding-small.margin-small
-      %h2
-        Find me on:
-      %ul
-        %li= link_to 'Facebook', 'https://www.facebook.com/bradley.staples'
-        %li= link_to 'Twitter', 'https://twitter.com/bradleystaples'
-        %li= link_to 'Github', 'https://github.com/bradleystaples'
-        %li= link_to 'LinkedIn', 'http://www.linkedin.com/in/bradleystaples'
-        %li= link_to 'jsFiddle', 'http://jsfiddle.net/user/bradleystaples'
+    = render :partial => 'social_media'

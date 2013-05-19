@@ -16,6 +16,9 @@
   .footer-text {
     display: inline;
   }
+  .social-media-list li {
+    margin-bottom: px2em(10px);
+  }
 }
 
 @media only screen and (min-width:720px) {
@@ -27,11 +30,15 @@
   .popover {
     min-width: px2em(450px);
   }
-  .contact-form {
-    float: right
-  }
   .social-media {
     float: left;
+  }
+  .contact-form {
+    float: right;
+    max-width: px2em(300px);
+    input, textarea {
+      max-width: none;
+    }
   }
 }
 

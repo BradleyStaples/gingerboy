@@ -1,0 +1,12 @@
+.social-media.padding-small.margin-small
+  %h3.text-large.text-center.text-dense
+    Find me on these sites:
+  %ul.social-media-list
+    - social = ['Facebook', 'Twitter', 'Github', 'LinkedIn']
+    - social.each do |s|
+      - url = "https://#{s}.com/bradleystaples"
+      - if s == 'LinkedIn'
+        - url = "https://#{s}.com/in/bradleystaples"
+      %li
+        %a.social-icon.social-sprite.img-rounded{:class => "social-#{s.downcase}", :href => url}
+        = link_to s, url, :target => "_blank"

@@ -19,6 +19,25 @@
     color: $errorColor;
   }
 }
-.error_messages {
+.error_messages, .social-media-list {
   list-style: none;
 }
+
+.social-media-list li {
+  margin-bottom: px2em(6px);
+}
+.social-icon {
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  border: 1px solid darken($blue, 5%);
+  @include box-shadow(rgba(darken($blue, 20%),.2) 0 0 px2em(5px));
+  &:hover {
+    border: 1px solid lighten($blue, 15%);
+    @include box-shadow(rgba(darken($blue, 20%),.3) 0 0 px2em(8px));
+  }
+}
+
+@import "social/*.png";
+@include all-social-sprites;
