@@ -9,9 +9,9 @@ gem 'thin'
 gem "awesome_print", "~> 1.1.0" # http://rubygems.org/gems/awesome_print
 gem 'annotate', ">=2.5.0" # https://github.com/ctran/annotate_models
 gem 'simple_form' # https://github.com/plataformatec/simple_form
+gem 'haml-rails' # can't be in assets for heroku
 
 group :assets do
-  gem 'haml-rails'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'compass-rails'
   gem 'bootstrap-sass', '~> 2.3.1.0' #https://github.com/thomas-mcdonald/bootstrap-sass
