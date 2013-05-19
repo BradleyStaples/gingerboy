@@ -7,3 +7,6 @@
 [submodule "public/projects/fontbeast"]
 	path = public/projects/fontbeast
 	url = git://github.com/BradleyStaples/FontBeast.git
+[submodule "public/projects/randle"]
+	path = public/projects/randle
+	url = git@github.com:BradleyStaples/Randle.git
