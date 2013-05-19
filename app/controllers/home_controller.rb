@@ -5,7 +5,7 @@ class HomeController < ApplicationController
   end
 
   def projects
-    @projects = Project.all
+    @projects = Project.all(:order => :display_order)
   end
 
   def portfolio
