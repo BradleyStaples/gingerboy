@@ -15,12 +15,12 @@ gem 'sass-rails',   '~> 3.2.3'
 gem 'compass-rails' #moving out of assets for heroku
 gem 'newrelic_rpm' # heroku addon https://rpm.newrelic.com/accounts/335790/applications/setup
 
-group :assets do
+#group :assets do
   gem 'bootstrap-sass', '~> 2.3.1.0' #https://github.com/thomas-mcdonald/bootstrap-sass
   gem 'coffee-rails', '~> 3.2.1'
   gem 'jquery-rails'
   gem 'uglifier', '>= 1.0.3'
-end
+#end
 
 group :development do
   gem "jshint_on_rails", "~> 1.0.2" #https://github.com/bgouveia/jshint_on_rails
