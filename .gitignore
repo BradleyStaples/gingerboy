@@ -22,6 +22,3 @@
 
 # keep gmail account info save
 /config/initializers/setup_mail.rb
-
-# ignore compiled assets
-public/assets/
