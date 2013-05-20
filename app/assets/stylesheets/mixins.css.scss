@@ -7,5 +7,5 @@ $baseFontSize: 18px;
 $baseLineHeight: 23px;
 
 @function px2em($target, $parent: $baseFontSize) {
-  @return ($target / $parent) + 0em;
+  @return ($target / $parent) * 1em;
 }

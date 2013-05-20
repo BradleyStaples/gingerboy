@@ -1,5 +1,5 @@
 = simple_form_for(@message, :url => contacted_path, :html => {:class => 'contact-form form-vertical' }) do |f|
-  %h3.text-large.text-center.text-dense
+  %h3.text-large.text-center.text-dense.contact-title
     Send me a message:
   - if flash[:alert]
     .alert.alert-info.fade.in.text-bold.text-center

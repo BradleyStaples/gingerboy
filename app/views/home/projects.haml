@@ -7,9 +7,8 @@
           .thumbnail-container
             %a.fancybox{:href => image_path("projects/#{p.image}"), :target => '_blank', :title => p.name}
               %img.img-polaroid{:src => image_path("projects/thumbs/#{p.image}")}
-          .text-dense.project-title
-            = link_to p.name, projectUrl, :target => "_blank"
-            .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip.hidden{:"data-title" => p.name, :"data-content" => p.description.html_safe}='i'
+          = link_to p.name, projectUrl, :target => "_blank", :class => 'text-dense project-title'
+          .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip{:"data-title" => p.name, :"data-content" => p.description.html_safe}='i'
           %p.clear-both.text-small
             #{p.blurb}
           %p.github-link.text-tiny

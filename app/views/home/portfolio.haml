@@ -6,7 +6,6 @@
           .thumbnail-container
             %a.fancybox{:href => image_path("portfolios/#{p.image}"), :target => '_blank', :title => p.name}
               %img.img-polaroid{:src => image_path("portfolios/thumbs/#{p.image}")}
-          .text-dense.project-title
-            = link_to p.name, p.url, :target => "_blank"
+          = link_to p.name, p.url, :target => "_blank", :class => 'text-dense project-title'
           %p.clear-both.text-small
             #{p.description.html_safe}

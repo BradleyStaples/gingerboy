@@ -30,10 +30,6 @@ a {
   }
 }
 
-.fancybox-close, .fancybox-close:hover {
-  border-bottom: none;
-}
-
 h1 {
   color: darken($blue, 5%);
   @include text-shadow(rgba(#fff, 0.5) px2em(2px) px2em(1px) 0);
@@ -87,6 +83,10 @@ hr {
   min-height: px2em(300px);
 }
 
+.intro-note {
+  margin-bottom: px2em(10px);
+}
+
 .navigation {
   list-style: none;
   padding: 0;
@@ -97,8 +97,8 @@ hr {
   }
 }
 
-.popover {
-  width: px2em(250px);
+.footer {
+  min-height: px2em(100px)
 }
 
 .footer-text {

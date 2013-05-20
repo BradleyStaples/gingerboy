@@ -9,6 +9,8 @@
 }
 .contact-form {
   width: 100%;
+  max-width: px2em(285px);
+  margin: 0 auto;
   label {
     text-indent: px2em(15px);
   }
@@ -25,9 +27,24 @@
   list-style: none;
 }
 
+.social-media-list {
+  margin: 0 auto px2em(10px) auto;
+  width: px2em(160px);
+}
+
+.social-title, .contact-title {
+  text-align: center
+}
+
 .social-media-list li {
   margin-bottom: px2em(6px);
 }
+
+.social-text-link {
+  position: relative;
+  top: px2em(-7px);
+}
+
 .social-icon {
   height: 32px;
   width: 32px;

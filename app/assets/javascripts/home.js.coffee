@@ -13,7 +13,7 @@ class GingerBoy.Base
     @popoverLinks = $('.project-tooltip')
     popoverOptions =
       html: true
-      placement: 'top'
+      placement: @popoverPlacement()
       trigger: 'click'
 
     @popoverLinks.popover(popoverOptions)
@@ -34,6 +34,11 @@ class GingerBoy.Base
     setTimeout ()->
       $('.flash-info').addClass 'fade-out'
     , 3000
+
+  popoverPlacement: () ->
+    mq = window.matchMedia("(min-width: 27.75em)")
+    if mq.matches then 'right' else 'top'
+
 
 $ ->
   "use strict"

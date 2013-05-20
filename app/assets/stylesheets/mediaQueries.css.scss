@@ -1,5 +1,5 @@
 
-@media only screen and (min-width:px2em(480px)) {
+@media only screen and (min-width:27.75em) {
   .contents-wrapper {
     width: 90%;
     border: px2em(7px) solid #fff;
@@ -11,7 +11,7 @@
     margin-right: auto;
   }
   .popover {
-    min-width: px2em(350px);
+    min-width: px2em(430px);
   }
   .footer-text {
     display: inline;
@@ -21,17 +21,36 @@
   }
 }
 
-@media only screen and (min-width:720px) {
-
-  .project-entry {
-    width: 80%;
-  }
-
-  .thumbnail-container {
-    width: 20%;
-    max-width: px2em(110px);
+@media only screen and (min-width:34.5em) {
+  .social-media {
     float: right;
-    text-align: center;
+    padding-left: px2em(15px);
+    padding-right: px2em(15px);
+  }
+  .social-title, .contact-title {
+    text-align: left;
+  }
+  .contact-form {
+    float: left;
+    margin-left: px2em(10px);
+    input, textarea {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width:40em) {
+  .project-title {
+    max-width: none;
+  }
+  .info-link {
+    display: none;
+  }
+  .info-tooltip.project-tooltip {
+    float: left;
+    display: block;
+    margin-left: 5px;
+    position: relative;
   }
   .contents-wrapper {
     max-width: px2em(680px);
@@ -41,25 +60,15 @@
   .popover {
     min-width: px2em(450px);
   }
-  .social-media {
-    float: left;
-  }
-  .contact-form {
-    float: right;
-    max-width: px2em(300px);
-    input, textarea {
-      max-width: none;
-    }
-  }
 }
 
-@media only screen and (min-width:860px) {
+@media only screen and (min-width:px2em(860px)) {
   .contents-wrapper {
     max-width: px2em(820px);
   }
 }
 
-@media only screen and (min-width:960px) {
+@media only screen and (min-width:px2em(960px)) {
   .contents-wrapper {
     max-width: px2em(920px);
     font-size: px2em(20px);

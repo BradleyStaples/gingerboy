@@ -1,5 +1,5 @@
-.social-media.padding-small.margin-small
-  %h3.text-large.text-center.text-dense
+.social-media
+  %h3.text-large.text-center.text-dense.social-title
     Or find me online:
   %ul.social-media-list
     - social = ['Facebook', 'Twitter', 'Github', 'LinkedIn']
@@ -9,4 +9,4 @@
         - url = "https://#{s}.com/in/bradleystaples"
       %li
         %a.social-icon.social-sprite.img-rounded{:class => "social-#{s.downcase}", :href => url}
-        = link_to s, url, :target => "_blank"
+        = link_to s, url, :target => "_blank", :class => 'social-text-link'

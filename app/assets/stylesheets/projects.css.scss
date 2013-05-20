@@ -1,6 +1,6 @@
 .info-tooltip {
   text-align: center;
-  display: inline-block;
+  display: none;
   height: px2em(22px);
   width: px2em(22px);
   border-radius: 50%;
@@ -15,9 +15,6 @@
   &:hover {
     background-color: $blue;
   }
-  &.hidden {
-    display: none;
-  }
 }
 
 .github-link {
@@ -25,6 +22,14 @@
 }
 .info-link {
   float: left;
+}
+
+.fancybox-close, .fancybox-close:hover {
+  border-bottom: none;
+}
+
+.popover {
+  width: px2em(350px);
 }
 
 .project-container {
@@ -43,10 +48,4 @@
   img {
     max-width: px2em(75px);
   }
-}
-
-.project-tooltip {
-  margin-top: 5px;
-  margin-left: 5px;
-  position: relative;
 }
