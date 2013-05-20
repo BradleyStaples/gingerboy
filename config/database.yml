@@ -6,6 +6,7 @@ development:
   min_messages: WARNING
   host: localhost
   port: 5432
+  username: gingerboy
 
 test:
   adapter: postgresql
@@ -15,6 +16,7 @@ test:
   min_messages: WARNING
   host: localhost
   port: 5432
+  username: gingerboy
 
 
 production:

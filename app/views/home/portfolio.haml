@@ -1,9 +1,10 @@
 .contents-wrapper.padding-large.centered
   -@sites.each do |s|
-    .portfolio-entry
+    .portfolio-entry.clearfix
       %h2.margin-none.text-large
         = link_to s.name, s.url, :target => "_blank"
-      - if !s.thumb.nil?
-        %img{:src => image_path(s.thumb)}
+      - if !s.image.nil?
+        %a.float-right{:href => image_path("portfolios/#{s.image}"), :target => '_blank'}
+          %img{:src => image_path("portfolios/thumbs/#{s.image}")}
       %p.margin-small
         #{s.description.html_safe}
