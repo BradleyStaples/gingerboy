@@ -1,0 +1,34 @@
+= simple_form_for(@message, :url => contacted_path, :html => {:class => 'contact-form form-vertical' }) do |f|
+  %h3.text-large.text-center.text-dense
+    Send me a message:
+  - if flash[:alert]
+    .alert.alert-info.fade.in.text-bold.text-center
+      %button.close{:type => 'button', :'data-dismiss' => "alert"}
+      =flash[:alert]
+  - else
+    -if @message.errors.any?
+      .alert.alert-block.alert-error.fade.in
+        %button.close{:type => 'button', :'data-dismiss' => "alert"}
+          &times;
+        Please fix the #{pluralize(@message.errors.count, "error")} and resubmit.
+        .text-small.padding-small
+          %ul.error_messages
+            - @message.errors.full_messages.each do |msg|
+              %li=msg
+    .control-group
+      =f.label :name
+      =f.text_field :name, :class => 'input-xlarge'
+    .control-group
+      =f.label :email
+      =f.text_field :email, :class => 'input-xlarge'
+    .control-group
+      =f.label :phone, "Phone <span class='text-muted'>(optional)</span>".html_safe
+      =f.text_field :phone, :class => 'input-xlarge', hint: 'Optional.'
+    .control-group
+      =f.label :subject
+      =f.text_field :subject, :class => 'input-xlarge'
+    .control-group
+      =f.label :body
+      =f.text_area :body, :rows => 5, :class => 'input-xlarge'
+    .control-group
+      =f.submit "Send Message", :class => 'btn btn-small btn-primary'

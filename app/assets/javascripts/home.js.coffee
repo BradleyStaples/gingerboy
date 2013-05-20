@@ -7,22 +7,28 @@ class GingerBoy.Base
   init: () ->
     @fadeOutFlashNotice()
     @initPopovers()
+    @initFancyBox()
 
   initPopovers: () ->
     @popoverLinks = $('.project-tooltip')
     popoverOptions =
       html: true
-      placement: 'right'
+      placement: 'top'
       trigger: 'click'
+
     @popoverLinks.popover(popoverOptions)
     @popoverLinks.click (event) => @handlePopover(event)
     $('body').on 'click', '.btn-popover', (event) ->
       $('.btn-popover').parents('.popover').siblings('.project-tooltip').popover('hide')
 
   handlePopover : (event) ->
+    event.preventDefault()
     target = event.target
     @popoverLinks.not(target).popover('hide')
     $('.popover-title').append('<button class="btn btn-mini btn-popover float-right">&times;</button>')
+
+  initFancyBox: () ->
+    $(".fancybox").fancybox()
 
   fadeOutFlashNotice: () ->
     setTimeout ()->

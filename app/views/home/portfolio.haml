@@ -1,10 +1,12 @@
 .contents-wrapper.padding-large.centered
-  -@sites.each do |s|
-    .portfolio-entry.clearfix
-      %h2.margin-none.text-large
-        = link_to s.name, s.url, :target => "_blank"
-      - if !s.image.nil?
-        %a.float-right{:href => image_path("portfolios/#{s.image}"), :target => '_blank'}
-          %img{:src => image_path("portfolios/thumbs/#{s.image}")}
-      %p.margin-small
-        #{s.description.html_safe}
+  %ul.no-list.margin-none.padding-none
+    - @portfolios.each do |p|
+      %li.clearfix.padding-none.project-container
+        .project-entry
+          .thumbnail-container
+            %a.fancybox{:href => image_path("portfolios/#{p.image}"), :target => '_blank', :title => p.name}
+              %img.img-polaroid{:src => image_path("portfolios/thumbs/#{p.image}")}
+          .text-dense.project-title
+            = link_to p.name, p.url, :target => "_blank"
+          %p.clear-both.text-small
+            #{p.description.html_safe}

@@ -13,7 +13,9 @@
     text-indent: px2em(15px);
   }
   input, textarea {
-    max-width: px2em(245px);
+    max-width: px2em(285px);
+    margin: 0 auto;
+    display: block;
   }
   abbr[title] {
     color: $errorColor;

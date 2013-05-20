@@ -22,6 +22,17 @@
 }
 
 @media only screen and (min-width:720px) {
+
+  .project-entry {
+    width: 80%;
+  }
+
+  .thumbnail-container {
+    width: 20%;
+    max-width: px2em(110px);
+    float: right;
+    text-align: center;
+  }
   .contents-wrapper {
     max-width: px2em(680px);
     border: px2em(10px) solid #fff;

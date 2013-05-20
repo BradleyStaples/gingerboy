@@ -15,6 +15,34 @@
   &:hover {
     background-color: $blue;
   }
+  &.hidden {
+    display: none;
+  }
+}
+
+.github-link {
+  float: right;
+}
+.info-link {
+  float: left;
+}
+
+.project-container {
+  margin-bottom: px2em(20px);
+  border-bottom: px2em(2px) solid $brown;
+}
+
+.project-title {
+  float: left;
+  max-width: px2em(125px);
+}
+.thumbnail-container {
+  float: right;
+  margin-left: px2em(10px);
+  margin-bottom: px2em(10px);
+  img {
+    max-width: px2em(75px);
+  }
 }
 
 .project-tooltip {

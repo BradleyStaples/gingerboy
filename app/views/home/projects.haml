@@ -2,17 +2,17 @@
   %ul.no-list.margin-none.padding-none
     - @projects.each do |p|
       - projectUrl = p.url.nil? ? "/projects/#{p.slug}/" : p.url
-      %li.clearfix.padding-small
-        - if !p.github.nil?
-          %span.text-tiny.float-right
-            = surround '[', ']' do
-              %a{:href => p.github, :target => '_blank' } GitHub repo
-        - if !p.image.nil?
-          %a.float-right.clear-right{:href => image_path("projects/#{p.image}"), :target => '_blank'}
-            %img{:src => image_path("projects/thumbs/#{p.image}")}
-        %h2.margin-none.text-large.float-left
-          = link_to p.name, projectUrl, :target => "_blank"
-        .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip{:"data-title" => p.name, :"data-content" => p.description.html_safe}
-          i
-        %p.margin-small.clear-left
-          #{p.blurb}
+      %li.clearfix.padding-none.project-container
+        .project-entry
+          .thumbnail-container
+            %a.fancybox{:href => image_path("projects/#{p.image}"), :target => '_blank', :title => p.name}
+              %img.img-polaroid{:src => image_path("projects/thumbs/#{p.image}")}
+          .text-dense.project-title
+            = link_to p.name, projectUrl, :target => "_blank"
+            .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip.hidden{:"data-title" => p.name, :"data-content" => p.description.html_safe}='i'
+          %p.clear-both.text-small
+            #{p.blurb}
+          %p.github-link.text-tiny
+            %a{:href => p.github, :target => '_blank' } GitHub repo
+          %p.info-link.text-tiny
+            %a.project-tooltip{:href => '#', :"data-title" => p.name, :"data-content" => p.description.html_safe} more info
