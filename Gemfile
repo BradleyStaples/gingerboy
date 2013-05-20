@@ -10,10 +10,10 @@ gem "awesome_print", "~> 1.1.0" # http://rubygems.org/gems/awesome_print
 gem 'annotate', ">=2.5.0" # https://github.com/ctran/annotate_models
 gem 'simple_form' # https://github.com/plataformatec/simple_form
 gem 'haml-rails' # can't be in assets for heroku
-gem 'compass-rails' #moving out of assets for heroku
 gem 'newrelic_rpm' # heroku addon https://rpm.newrelic.com/accounts/335790/applications/setup
 
 group :assets do
+  gem 'compass-rails' #moving out of assets for heroku
   gem 'sass-rails',   '~> 3.2.3'
   gem 'bootstrap-sass', '~> 2.3.1.0' #https://github.com/thomas-mcdonald/bootstrap-sass
   gem 'coffee-rails', '~> 3.2.1'
