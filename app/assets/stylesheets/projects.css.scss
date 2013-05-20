@@ -33,8 +33,15 @@
 }
 
 .project-container {
-  margin-bottom: px2em(20px);
-  border-bottom: px2em(2px) solid $brown;
+  margin-bottom: px2em(10px);
+  margin-top: px2em(10px);
+}
+
+.project-divider {
+  border-top: px2em(1px) solid lighten(rgba($orange, .5), 10%);
+  border-bottom: px2em(1px) solid darken(rgba($orange, .5), 10%);
+  @include box-shadow(rgba($brown, .1) 0 0 px2em(1px));
+
 }
 
 .project-title {
@@ -47,5 +54,13 @@
   margin-bottom: px2em(10px);
   img {
     max-width: px2em(75px);
+    @include box-shadow(none);
+    @include transition-property(all);
+    @include transition-duration(.5s);
+    @include transition-timing-function(ease);
+    &:hover {
+      @include box-shadow(rgba(0,0,0,0.5) 0 0 px2em(5px));
+      @include border-radius(15%);
+    }
   }
 }

@@ -8,6 +8,7 @@ class GingerBoy.Base
     @fadeOutFlashNotice()
     @initPopovers()
     @initFancyBox()
+    @animateSocialIcons()
 
   initPopovers: () ->
     @popoverLinks = $('.project-tooltip')
@@ -39,6 +40,11 @@ class GingerBoy.Base
     mq = window.matchMedia("(min-width: 27.75em)")
     if mq.matches then 'right' else 'top'
 
+  animateSocialIcons: () ->
+    $('.social-text-link').on 'mouseenter', (event) ->
+      $(event.target).siblings('.social-icon').addClass 'hover'
+    $('.social-text-link').on 'mouseleave', (event) ->
+      $(event.target).siblings('.social-icon').removeClass 'hover'
 
 $ ->
   "use strict"

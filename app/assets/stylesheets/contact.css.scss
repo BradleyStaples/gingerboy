@@ -52,9 +52,29 @@
   display: inline-block;
   border: 1px solid darken($blue, 5%);
   @include box-shadow(rgba(darken($blue, 20%),.2) 0 0 px2em(5px));
-  &:hover {
-    border: 1px solid lighten($blue, 15%);
+  @include transition-property(all);
+  @include transition-duration(.5s);
+  @include transition-timing-function(ease);
+  &:hover, &.hover {
+    border: 1px solid darken($blue, 20%);
     @include box-shadow(rgba(darken($blue, 20%),.3) 0 0 px2em(8px));
+    @include border-radius(50%);
+  }
+}
+
+.contact-pic {
+  display: none;
+  margin: 0 auto;
+  background-image: url(image_path('me.jpg'));
+  width: 250px;
+  height: 600px;
+  @include border-radius(px2em(10px));
+  @include filter (grayscale(.5));
+  border: 1px solid darken($brown, 5%);
+  @include box-shadow(rgba(darken($brown, 20%),.2) 0 0 px2em(5px));
+  &:hover {
+    @include filter (grayscale(0));
+    @include box-shadow(rgba($brown,.5) 0 0 px2em(5px));
   }
 }
 

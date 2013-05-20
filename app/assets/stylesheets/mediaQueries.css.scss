@@ -19,6 +19,12 @@
   .social-media-list li {
     margin-bottom: px2em(10px);
   }
+  .thumbnail-container img {
+    max-width: none;
+  }
+  .project-title {
+    max-width: none;
+  }
 }
 
 @media only screen and (min-width:34.5em) {
@@ -40,11 +46,11 @@
 }
 
 @media only screen and (min-width:40em) {
-  .project-title {
-    max-width: none;
-  }
   .info-link {
     display: none;
+  }
+  .github-link {
+    float: left;
   }
   .info-tooltip.project-tooltip {
     float: left;
@@ -68,19 +74,12 @@
   }
 }
 
-@media only screen and (min-width:px2em(960px)) {
-  .contents-wrapper {
-    max-width: px2em(920px);
-    font-size: px2em(20px);
-  }
-}
-
-@media only screen and (min-width:1050px) {
+@media only screen and (min-width:px2em(1015px)) {
   .contents-wrapper {
     max-width: px2em(1000px);
+    font-size: px2em(20px);
   }
-}
-
-@media only screen and (min-width:1350px) {
-
+  .contact-pic {
+    display: block;
+  }
 }
