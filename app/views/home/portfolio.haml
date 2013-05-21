@@ -7,6 +7,28 @@
             %a.project-thumbnail-link{:href => image_path("portfolios/#{p.image}"), :target => '_blank', :title => p.name}
               %img.project-thumbnail.img-polaroid{:src => image_path("portfolios/thumbs/#{p.image}")}
           = link_to p.name, p.url, :target => "_blank", :class => 'text-dense project-title'
-          %p.clear-both.text-small
+          %p.clear-both
             #{p.description.html_safe}
         .project-divider
+
+    %li.clearfix.padding-none.project-container#ecommerce
+      .project-entry
+        .text-dense.project-title
+          TWG's Standard Ecommerce System
+        %p.clear-both
+          While working at TWG Design Studios, code was typically written in classic ASP. Good, solid solutions for ecommerce sites were scarce or didn't meet the company needs, so I spent several months modelling, coding, testing, and otherwise creating a modular, customizable, cohesive system. Virtually everything could be controlled via an admin panel by clients. Features include:
+        %ul.ecom
+          %li
+            The payment Gateway could be PayPal or Authorize.net
+          %li
+            Choice of one or more shipping carriers (FedEx, USPS, UPS) as well as types of shipments (freight, packages, flat rates). Conditional rules could also be used, such as free shipping for orders over a certain dollar threshhold during checkout.
+          %li
+            Inventory Management for products categories, subcategories, tags. Products could be contain 'options' (for example, sizes and colors for shirts) in a many-to-many relationship. For clients who sold digital goods or had no worries about an item being in stock, supported a virtual 'infinite' toggle for inventory.
+          %li
+            Coupons, discounts, and sales prices
+          %li
+            Multiple image uploads for categories and products. Images were cropped and utilized as thumbnails, pan-over zooms, lightbox effects, and were paginated as a small gallery as needed on the product details pages.
+          %li
+            Most cart control could be done from any page without the need to go to an 'edit cart' page, via mega menus and heavy ajax usage. Updating the quantities and pre-calculating shipping and taxes could be done on the edit cart and starting checkout pages.
+          %li
+            Full account management for site customers, although creating an account was optional. Customers had access to full purchase history, order tracking, address management, ordering tracking, 1-click order duplication, wishlists, reviews, product alerts, submitting/tracking customer service tickets, and satisfaction surveys.

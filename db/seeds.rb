@@ -2,7 +2,7 @@ Project.create([
                    {
                        name: 'Resizive',
                        url: 'http://resizive.com',
-                       description: 'An incredible tool that enables easier detection of content-based breakpoints for media queries in regards to responsively designed fluid-width websites. It allows increment \'stepping\' of the viewport width to discover when your website’s content layout is failing, and can also animate between a minimum and maximum width to help visualize your design in real time. This allows you to discard outdated device sizes as your breakpoints for your media queries, and use the content itself as a guide, fulfilling a richer, better experience.',
+                       description: 'An incredible tool that enables easier detection of content-based breakpoints for media queries in regards to responsively designed fluid-width websites. It allows increment \'stepping\' of the viewport width to discover when your website\'s content layout is failing, and can also animate between a minimum and maximum width to help visualize your design in real time. This allows you to discard outdated device sizes as your breakpoints for your media queries, and use the content itself as a guide, fulfilling a richer, better experience.',
                        image: 'resizive.png',
                        github: 'https://github.com/BradleyStaples/Resizive',
                        display_order: 1
@@ -45,73 +45,66 @@ Project.create([
 
 Portfolio.create([
                      {
-                         name:  'Glyde (Desktop)',
+                         name:  'Glyde',
                          url:  'http://glyde.com',
-                         description:  'A peer-to-peer ecommerce marketplace, Glyde is an easy and fast way to buy and sell both video games and consumer electronics. I was responsible for maintaining and adding user-facing features. I architected landing pages that heavily impacted Glyde\'s SEO benefits (%% placeholder) while reducing SEM costs (%% placeholder). A rapid, agile-based development cycled led to numerous quick UI updates, which I implemented based upon specs given to me by the designer. Using Split, an A/B testing framework, I created potential new features and then recorded the results using Kissmetrics, which allowed the business and product teams to determine performance of the features. Working with Glyde\'s codebase taught me Ruby on Rails.',
+                         description:  'A peer-to-peer ecommerce marketplace, Glyde is an easy and fast way to buy and sell both video games and consumer electronics. I was responsible for maintaining and adding user-facing features, often via client-side templates with Hogan/Mustache. I architected landing pages that heavily impacted Glyde\'s SEO benefits (%% placeholder) while reducing SEM costs (%% placeholder). A rapid, agile-based development cycled led to numerous quick UI updates, which I implemented based upon specs given to me by the designer. Using Split, an A/B testing framework, I created potential new features and then recorded the results using Kissmetrics, which allowed the business and product teams to determine performance of the features. Working with Glyde\'s codebase taught me Ruby on Rails (v2), HAML, SASS.',
                          image:  'glyde.png',
                          display_order: 1
                      },
                      {
                          name:  'Sell Smart',
                          url:  'http://glyde.com/sell-smart',
-                         description:  '',
+                         description:  'Glyde\'s Sell Smart tool was a side-project thought of as a way to improve conversion by proving the effectiveness of Glyde\'s marketplace. I worked in tandem with a back-end engineer on a separate codebase from Glyde\'s main website, working in a Rails 3 app. Utilizing CoffeeScript, HAML, and SASS for the front end, along with heavy usage of Underscore.js, I quickly developed and iterated the UI based upon specs from the designer. Prices were scraped from competing online marketplaces, and this data (along with other data such as ease of use, shipping details, selling time, etc) were rendered to users in a sortable table on a variety of consumer electronic products, prominently Apple devices. Also of considerable note was the Google Chart used to create a view of price histories for the various marketplaces, showing not only current price but general trends over a 60-day window. The chart was made as a Rails partial, built and viewed in a manner that allowed it to be displayed on third party websites as well as within Glyde.',
                          image:  'sellsmart.png',
                          display_order: 2
                      },
                      {
                          name:  'Glyde (Mobile)',
                          url:  'http://m.glyde.com',
-                         description:  '',
+                         description:  'Glyde\'s mobile site bare-bones when I started, and within my first few weeks at the company I was adding features with the other engineers. It makes heavy use of Hogan/Mustache templates and Underscore.js, and is very AJAX heavy to the point that, while not truly a Single Page App it comes close with only a handful of fully separate views. The same code-base for this was also utilized in powering a third party marketplace widget called the Inline Store, which facilitated allowing third parties to let Glyde host fully functional buying/selling of devices on their websites without the need to come to Glyde directly, via clever scripting around modal dialogs and iframes.',
                          image:  'glyde-mobile.png',
                          display_order: 3
                      },
                      {
                          name: 'Roundstone Native Seed',
                          url: 'https://www.roundstoneseed.com/',
-                         description: 'Another customized ecommerce system that allowed for wholly different product types (actually requiring separate database tables) to keep track of their mixes and seeds, many of which could be bought as a unit, by the ounce, or by the pound. Furthermore customers were allowed to create their own seed mixtures choosing among a variety of seeds and different weights, and then order them in various quantities. Seeds were sortable and searchable by region, price, type, and various other criteria, and virtually all of the information was loaded in tooltips and modal windows to make the shopping experience easier than navigation what otherwise would have been dozens of pages for even a relatively simple checkout.',
+                         description: 'Roundstone Native Seed sells seeds for flowers, grasses, food plots, and more. Based off of a customized ecommerce system that I created while employed by TWG Design Studios, the site required heavy modifications to the standard modelling for the ecommerce package usually sold. Seeds could be sold priced per unit, per ounce, and/or per pound; mixes were made of various quantities, numbers, and ounces of seeds, but could also be completely customized and created on-the-fly by users.  A heavy ajax system, shopping seeds allowed the user to sort and search by region, price, type, and various other criteria, and virtually all of the information was lazily loaded in tooltips and modal windows to make the shopping experience easier than navigation the dozens of pages required by many other similar sites for a relatively simple checkout process. Also included the same features outlined in the <a href="#ecommerce">standard ecommerce system</a>.',
                          image: 'roundstone.png',
                          display_order: 4
                      },
                      {
                          name: 'My New KY Home',
                          url: 'http://www.mynewkyhome.com/',
-                         description: 'Powered by and with a centralized database for multiple individual Realtor&reg; agents and real estate companies, and in turn powered each client\'s respective individual website as well. AJAX heavy to allow sorting, searching, pagination, and multiple views (via modal dialogs). Moderate usage of cookies to keep persistent sorts and search settings saved. Massive custom backend to manage CRUD operations with unique client logins to allow unlimited image uploads, very customizable feature selections within an \'inventory\' of real estate listings that could be assigned/maintained by agency or by agent or both.',
+                         description: 'TWG Design Studios has enough individual Realtors&reg;, brokers, and real estate agencies that it only made sense to create My New KY Home, a centralized system containing all listings, agent info, and more. In turn, the site\'s SQL Server database powered all of the separate websites for those agents and agencies. Heavy usage of AJAX allowed sorting, searching, pagination, and multiple views (via modal dialogs) of all tabular information. The site made moderate usage of cookies to keep sorting filters and search settings saved. A previous incarnation of the site existed before I was employed at TWG, but during my employ I rewrote the codebase, drastically improving functionality, organization, and performance. Classic ASP being what it is, it took a massive amount of custom backend code just to manage CRUD operations. Logins could be per agency or per agent, unlimited image uploads could be attached to listings (previously limited to 4!), listings could be of varying types (rentals, auctions, residential, business/industrial, land only). Common listing features were easily managed by toggling a checkbox in the admin. Users searching for listings could search via nearly a dozen different criteria and then, if they created an account, could save listings, schedule showings, email to a friend, get printer friendly versions, calculate mortgages, and share to social media. On top of these features, the site leveraged ads created for all agents and agencies participating, a dream home finder, and a community-feature database.',
                          image: 'mnkh.png',
                          display_order: 5
                      },
                      {
                          name: 'Dawn Bland',
                          url: 'http://www.dawnbland.com/',
-                         description: 'Dawn Bland is a fitness trainer and sells monthly memberships to watch online videos. I programmed a monthly recurring subscription, first for PayPal, and later for Authorize.net. These videos could be loaded via flash or played in a manner similar to the HTML 5 video playerback methods, but this was coded before HTML5 was used much. Later on the client also added a /store/ to the website to sell tangible goods and downloadable videos (to get the file as opposed to streaming). I coded much of the front-end as well.',
+                         description: 'Dawn Bland is a fitness trainer and sells monthly memberships to watch online videos, organized as classes. I programmed a monthly recurring subscription, first for PayPal, and later for Authorize.net. Feature detection was used to determine what video to send to the client, such that different codecs and filetypes could be sent via separate methods (flash or precursors to what would become HTML 5), allowing for playback on as many devices as possible: regular browsers obviously, but also iPhones, iPads, game systems. Later on the client also added a customized eccomerce section to the website to facilitate the sell of tangible goods as well as for-purchase downloadable videos, for customers who didn\'t want to stream them continuously. Also included the same features outlined in the <a href="#ecommerce">standard ecommerce system</a>. ',
                          image: 'dawnbland.png',
                          display_order: 6
                      },
                      {
                          name: 'Arnold\'s Coffee',
                          url: 'http://www.arnoldscoffee.com/',
-                         description: 'Custom ecommerce site based off a built-from-scratch ecommerce system that allowed for variations of coffee categories, grinds, caf/decaf, bag sizes, and frequent sales pricing. Ecommerce system flexible enough to be placed within a site not originally designed with it in mind. Handled payment gateways, a flat shipping fee, appropriate sales taxes, inventory management among other things.',
+                         description: 'With a name in the local community, Arnold began selling his gourmet coffee online. His site was a custom ecommerce system that allowed for variations of coffee categories, grinds, caffeinated vs decaf, bag sizes, and frequent sales pricing. His site originally was not an ecommerce system, which only proves how resilient the ecommerce solution I crafted turned out to be. Also included the same features outlined in the <a href="#ecommerce">standard ecommerce system</a>.',
                          image: 'arnoldscoffee.png',
                          display_order: 7
                      },
                      {
                          name: 'Tri-State Healthcare I.T. Conference',
                          url: 'http://www.tri-state-health-it.com/',
-                         description: 'A custom email system was built for the \'HIT\' Conference that allowed various templates and could send to both email addresses and as SMS to mobile phones. They also supported a registration & survey that were associated together to keep track of potential prize give-a-ways for registrants who registered early and filled out the surveys afterwards.',
+                         description: 'Hosting a healthcare conference, this site needed a custom email system that allowed for multiple view templates and could to delivered to email addresses and/or user\'s mobile phones via SMS messaging. These email blasts could be sorted into categories, so mass-mailings could be sent to all recipients, individuals, or specific subgroups. I also developed a registration and associated survey system that to keep track of potential prize give-a-ways for early-bird registrants, who automatically fed into their own subgroup in the email mailing lists. The registration utilized Authorize.net as a payment gateway.',
                          image: 'tri-state-hit.png',
                          display_order: 8
                      },
                      {
                          name: 'Hardin County Schools PAC',
                          url: 'http://thepac.net/',
-                         description: 'The PAC sold tickets online with a precise number of tickets available in the various sections of the facility, each at different prices depending on the show date, time, seating section, and depending on if the show was primarily for schools or open to the public. It also allowed patrons to fill out a multi page form to rent the facility for their own plays or other theatrical acts, and this in turn fed a dynamically created interactive PDF that was used for contracts and was supported by a detailed admin section for the PAC to edit, approve, deny, re-schedule, search, and duplicate all such applications. The site also supported various other small features for patron feedback, surveys, schedules, requests; a lot of form-work and validation. While I was heavily occupied on three of their yearly redesigns on both the front-end and the back-end (and indeed rewrote the facility rental sections of the site from scratch for a more streamlined experience), I did not do much front-end work on their latest design.',
+                         description: 'The Performing Arts Center, or PAC, was the community center for all things involving the art, and was used outside of the school system. The website sold tickets for shows with limited seating (and thus tickets) available for each of the sections, and tickets prices could vary depending on the show date, time, seating section, and whether the show was primarily for schools or open to the public. The site also allowed patrons to fill out a multi page form to rent the facility for their own plays or other theatrical acts, and this in turn fed a dynamically created interactive PDF that was used for contracts and booking by PAC staff. The entire process was supported by a detailed admin section staff to edit, approve, deny, re-schedule, search, and duplicate all such applications. I also developed other small features for patron feedback, surveys, schedules, and requests. I was heavily occupied on three of their yearly redesigns on both the front-end and the back-end, and a fourth year doing the back-end alone. During these redesigns I re-engineered the facility rental sections, removing much of the needless complexity for a more streamlined, functional experience.',
                          image: 'pac.png',
                          display_order: 9
-                     },
-                     {
-                         name: 'Communicare',
-                         url: 'http://www.communicare.org/',
-                         description: 'Communicare is an older site I helped do most of the front-end development on. I was given a design and a homepage and created most secondary pages and all coded all ancillary content. I also created an custom jobs listing that sortable/searchable by facility, department, date, and text that could be updated by the client with a CRUD interface in their admin or via uploading a CSV file. They have since stopped using the jobs listing on their website.',
-                         image: 'communicare.png',
-                         display_order: 10
                      }
                  ])

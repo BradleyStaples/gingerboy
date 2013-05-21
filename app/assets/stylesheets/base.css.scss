@@ -76,12 +76,13 @@ hr {
 }
 
 .contents-wrapper {
+  width: 80%;
+  min-height: px2em(300px);
+  max-width: px2em(1000px);
   background-color: rgba(255, 255, 255, .7);
   @include border-radius(.5em);
   border: px2em(5px) solid #fff;
   @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(8px));
-  width: 80%;
-  min-height: px2em(300px);
 }
 
 .intro-note {
@@ -122,6 +123,11 @@ body.contact a.nav-contact,
 body.contacted a.nav-contact {
   border-bottom: px2em(1px) solid lighten($blue, 20%);
   font-weight: bold;
+}
+
+.ecom li {
+  line-height: normal;
+  margin-bottom: px2em(3px);
 }
 
 .footer {

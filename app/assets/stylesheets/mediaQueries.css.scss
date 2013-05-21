@@ -60,21 +60,13 @@
 
 @media only screen and (min-width:40em) {
   .contents-wrapper {
-    max-width: px2em(680px);
     border: px2em(10px) solid #fff;
     @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(13px));
   }
 }
 
-@media only screen and (min-width:px2em(860px)) {
+@media only screen and (min-width:52em) {
   .contents-wrapper {
-    max-width: px2em(820px);
-  }
-}
-
-@media only screen and (min-width:px2em(1015px)) {
-  .contents-wrapper {
-    max-width: px2em(1000px);
     font-size: px2em(20px);
   }
   .contact-pic {

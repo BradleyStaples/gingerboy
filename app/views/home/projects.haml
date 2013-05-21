@@ -9,6 +9,6 @@
           = link_to p.name, p.url, :target => "_blank", :class => 'text-dense project-title'
           %p.github-link.text-tiny
             %a{:href => p.github, :target => '_blank' } GitHub repo
-          %p.clear-both.text-small
+          %p.clear-both
             #{p.description.html_safe}
         .project-divider.clear-both

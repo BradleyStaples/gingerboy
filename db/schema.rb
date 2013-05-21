@@ -36,11 +36,9 @@ ActiveRecord::Schema.define(:version => 20130517072849) do
   create_table "projects", :force => true do |t|
     t.integer  "display_order"
     t.string   "name"
-    t.string   "slug"
     t.string   "url"
     t.string   "github"
     t.string   "image"
-    t.string   "blurb"
     t.text     "description"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
