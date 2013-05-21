@@ -21,7 +21,8 @@ class ContactMailer < ActionMailer::Base
     @message = message
     mail(
         :subject => "[bradleystapl.es contact form] #{message.subject}",
-        :from => "\"#{message.name}\" <#{message.email}>"
+        :from => "\"#{message.name}\" <#{message.email}>",
+        :reply_to => message.email
     )
   end
 
