@@ -1,0 +1,18 @@
+!!!
+%html{:lang => 'en'}
+  %head
+    %meta {:content => "text/html; charset=UTF-8",
+      :"http-equiv" => "Content-Type"}
+  %body
+    %p
+      Name: {#@message.name}
+    %p
+      Email: {#@message.email}
+    %p
+      Phone: {#@message.phone}
+    %p
+      Subject: {#@message.subject}
+    %p
+      Body:
+      %br
+      #{@message.body}

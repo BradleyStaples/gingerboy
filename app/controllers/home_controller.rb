@@ -20,9 +20,8 @@ class HomeController < ApplicationController
 
   def contacted
     @message = Message.new(params[:message])
-
     if @message.valid?
-      ContactMailer.form_mail(@message).deliver
+      ContactMailer.contact_email(@message).deliver
       flash[:alert] = "Message was successfully sent."
       redirect_to(contact_path)
     else
