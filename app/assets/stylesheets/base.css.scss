@@ -87,6 +87,22 @@ hr {
   margin-bottom: px2em(10px);
 }
 
+.gingerboy {
+  @include transition-property(all);
+  @include transition-duration(.5s);
+  @include transition-timing-function(ease);
+  &:hover {
+    @include transform(rotate(5deg) skew(-5deg,-5deg));
+  }
+  &.first {
+    display: none;
+  }
+  &.second {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .navigation {
   list-style: none;
   padding: 0;

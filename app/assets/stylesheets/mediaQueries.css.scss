@@ -28,6 +28,22 @@
 }
 
 @media only screen and (min-width:34.5em) {
+  .intro-note {
+    max-width: px2em(600px);
+  }
+  .intro-note-text {
+    position: relative;
+    top: 50px;
+  }
+  .gingerboy.first {
+    display: block;
+    float: left;
+    margin: 0 px2em(10px) px2em(5px) 0;
+    max-width: 140px;
+  }
+  .gingerboy.second {
+    display: none;
+  }
   .social-media {
     float: right;
     padding-left: px2em(15px);
