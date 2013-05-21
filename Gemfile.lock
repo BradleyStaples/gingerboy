@@ -60,6 +60,9 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.6.0)
+    figaro (0.6.4)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     fssm (0.2.10)
     haml (4.0.2)
       tilt
@@ -180,6 +183,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   coffee-rails-source-maps
   compass-rails
+  figaro
   haml-rails
   jasmine-rails
   jquery-rails

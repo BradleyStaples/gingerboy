@@ -20,5 +20,5 @@
 # ignore compiled coffeescript maps
 /public/assets/source_maps
 
-# keep gmail account info save
-/config/initializers/setup_mail.rb
+# Ignore application configuration
+/config/application.yml
