@@ -1,9 +1,9 @@
 - defaultClasses = "nav-link margin-small text-dense"
 
-%nav.margin-medium{:class => navClass}
+%nav.margin-medium
   %ul.navigation.text-center.centered
     %li=link_to "Home", home_path, :class => "#{defaultClasses} nav-home"
     %li=link_to "Portolio", portfolio_path, :class => "#{defaultClasses} nav-portfolio"
     %li=link_to "Projects", projects_path, :class => "#{defaultClasses} nav-projects"
-    %li=link_to "Resume", "/resume.pdf", :class => "#{defaultClasses} nav-resume", :target => '_blank'
+    %li=link_to "Resume", "/resume.pdf", :class => "#{defaultClasses}", :target => '_blank'
     %li=link_to "Contact", contact_path, :class => "#{defaultClasses} nav-contact"

@@ -2,7 +2,7 @@
 %html{:lang => 'en'}
   %head
     = render :partial => 'shared/meta'
-  %body
+  %body{:class => params[:action]}
     #centering_container
       = render :partial => 'shared/header'
       = yield
