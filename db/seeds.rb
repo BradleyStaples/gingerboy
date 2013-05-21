@@ -1,50 +1,40 @@
 Project.create([
                    {
                        name: 'Resizive',
-                       slug: 'resizive',
                        url: 'http://resizive.com',
-                       blurb: 'Enables easier detection of content-based breakpoints for media queries in regards to responsively designed fluid-width websites.',
-                       description: 'Resizive is an incredible tool that enables easier detection of content-based breakpoints for media queries in regards to responsively designed fluid-width websites. It allows increment \'stepping\' of the viewport width to discover when your website content\'s layout is failing, and can also animate between a minimum and maximum width to help visualize your design in realtime. This allows you to discard out-dated device sizes as your breakpoints for your media queries and use the content itself as a guide, fulfilling a richer, better experience.',
+                       description: 'An incredible tool that enables easier detection of content-based breakpoints for media queries in regards to responsively designed fluid-width websites. It allows increment \'stepping\' of the viewport width to discover when your website’s content layout is failing, and can also animate between a minimum and maximum width to help visualize your design in real time. This allows you to discard outdated device sizes as your breakpoints for your media queries, and use the content itself as a guide, fulfilling a richer, better experience.',
                        image: 'resizive.png',
                        github: 'https://github.com/BradleyStaples/Resizive',
                        display_order: 1
                    },
                    {
                        name: 'Remember The Ginger',
-                       slug: 'cards',
-                       url: nil,
-                       blurb: 'Simple JavaScript card matching game that keeps track of score and a few metrics.',
-                       description:  'Remember The Ginger is a fun, fast card game of \'Concentration\' (also called Match and Memory). Keep flipping cards over to match them with their twin until you have matched all cards. Powered by JavaScript and CSS3 animations, the game keeps track of how many flips it takes you to complete the game as well as your time to give you a few simple metrics to compare against yourself or others.',
+                       url: 'http://projects.gingerboydev.com/remember-the-ginger/',
+                       description:  'A fun, fast card game of \'concentration\' more commonly known as Match or Memory, simply flip cards over to match them with their twin until you have matched all the cards. Powered by JavaScript and CSS3 animations, the game remembers how many flips it takes you to complete the game. It also monitors time to complete the game to give you a few simple metrics to compare against yourself or others.',
                        image: 'cards.png',
                        github: 'https://github.com/BradleyStaples/Remember-The-Ginger',
                        display_order: 2
                    },
                    {
                        name:  'Minesweeper',
-                       slug: 'minesweeper',
-                       url:  nil,
-                       description:  'A simple game of minesweeper that lets you flag mines, show empty squares, keeps score, cheat, and lets you save and load your game.',
-                       blurb: 'A simple game of minesweeper.',
+                       url:  'http://projects.gingerboydev.com/minesweeper',
+                       description:  'A simple game that lets you flag mines, show empty squares, keeps score and even cheat, if you\'re so inclined. In addition, you can save and load your game later. Uses CSS3 to create a thoughtful in-game experience.',
                        image:  'minesweeper.png',
                        github: 'https://github.com/BradleyStaples/minesweeper',
                        display_order: 3
                    },
                    {
                        name: 'Randle',
-                       slug: 'randle',
-                       url: nil,
-                       blurb: 'Random string (e.g. password) generator. Can limit by character type, string length, and pattern matching.',
-                       description: 'Randle is a small, simple app meant to ease the creation of random (and pseudo-random) passwords and strings.<ul><li>Create strings with pattern recognition</li><li>Allows literal characters to be inserted into patterns</li><li>Specify the types of characters allowed: lowercase letters, uppercase letters, numbers, and symbols</li><li>In full random mode, determine the minimum and maximum number of characters allowed.</li><li>Coming Soon: ability to limit to specific letters, numbers, and symbols.</li></ul>',
+                       url: 'http://projects.gingerboydev.com/randle',
+                       description: 'A small, simple app meant to ease the creation of random (and pseudo-random) passwords and strings. The app will create strings with pattern recognition allowing for literal characters to be inserted into patterns. It\'s also possible to specify the types of characters allowed, including lowercase letters, uppercase letters, numbers and symbols. Taking advantage of full random mode gives the option to set the minimum and maximum number of characters allowed.',
                        image: 'randle.png',
                        github: 'https://github.com/BradleyStaples/Randle',
                        display_order: 4
                    },
                    {
                        name:'Fontbeast',
-                       slug:'fontbeast',
-                       url: nil,
-                       blurb: 'Customize Google Web Fonts with colors, sizes, text, and more and output with HTMl5 Canvas. Includes code to recreate.',
-                       description: 'Fontbeast allows you to create an HTMl5 Canvas element to create an \'image\' of a textual logo or saying. Customize the text displayed as well as the font-face by choosing from among hundreds of fonts from <a href="http://www.google.com/fonts/">Google\'s Web Font Library</a>, along with text color and size, stroke color and size, and background color, . Once your done, Fontbeast generates the canvas element as a preview, and gives you the code to create the same canvas yourself on your own website.',
+                       url: 'http://projects.gingerboydev.com/fontbeast',
+                       description: 'A fun web app that uses an HTLM5 Canvas element to create an \'image\' of a textual logo or saying. Customize the text displayed and font-face by choosing from the hundreds of fonts in <a href="http://www.google.com/fonts/">Google\'s Web Font Library</a>. Fontbeast also allows for custom text color and size, stroke color and size, as well as background color. When your options are ready to go, the web app generates the canvas element as a preview, and then shares the code to create the same canvas yourself on your own website.',
                        image: 'fontbeast.png',
                        github: 'https://github.com/BradleyStaples/FontBeast',
                        display_order: 5
@@ -57,21 +47,21 @@ Portfolio.create([
                      {
                          name:  'Glyde (Desktop)',
                          url:  'http://glyde.com',
-                         description:  'Glyde\'s desktop website.',
+                         description:  'A peer-to-peer ecommerce marketplace, Glyde is an easy and fast way to buy and sell both video games and consumer electronics. I was responsible for maintaining and adding user-facing features. I architected landing pages that heavily impacted Glyde\'s SEO benefits (%% placeholder) while reducing SEM costs (%% placeholder). A rapid, agile-based development cycled led to numerous quick UI updates, which I implemented based upon specs given to me by the designer. Using Split, an A/B testing framework, I created potential new features and then recorded the results using Kissmetrics, which allowed the business and product teams to determine performance of the features. Working with Glyde\'s codebase taught me Ruby on Rails.',
                          image:  'glyde.png',
                          display_order: 1
                      },
                      {
                          name:  'Sell Smart',
                          url:  'http://glyde.com/sell-smart',
-                         description:  'Sell Smart.',
+                         description:  '',
                          image:  'sellsmart.png',
                          display_order: 2
                      },
                      {
                          name:  'Glyde (Mobile)',
                          url:  'http://m.glyde.com',
-                         description:  'Glyde\'s mobile website.',
+                         description:  '',
                          image:  'glyde-mobile.png',
                          display_order: 3
                      },

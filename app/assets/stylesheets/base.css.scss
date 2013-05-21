@@ -55,6 +55,7 @@ hr {
   color: $brown;
   @include text-shadow(rgba(#fff, 0.5) px2em(2px) px2em(2px) 0);
 }
+
 ::selection {
   background: lighten($blue, 25%);
   color: $brown;
@@ -91,9 +92,6 @@ hr {
   @include transition-property(all);
   @include transition-duration(.5s);
   @include transition-timing-function(ease);
-  &:hover {
-    @include transform(rotate(5deg) skew(-5deg,-5deg));
-  }
   &.first {
     display: none;
   }
@@ -101,6 +99,10 @@ hr {
     display: block;
     margin: 0 auto;
   }
+}
+
+.intro-note:hover .gingerboy, .gingerboy:hover {
+  @include transform(rotate(5deg) skew(-5deg,-5deg));
 }
 
 .navigation {
@@ -111,6 +113,15 @@ hr {
     list-style: none;
     display: inline-block;
   }
+}
+
+body.index a.nav-home,
+body.portfolio a.nav-portfolio,
+body.projects a.nav-projects,
+body.contact a.nav-contact,
+body.contacted a.nav-contact {
+  border-bottom: px2em(1px) solid lighten($blue, 20%);
+  font-weight: bold;
 }
 
 .footer {

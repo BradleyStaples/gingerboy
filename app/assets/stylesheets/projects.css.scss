@@ -1,35 +1,9 @@
-.info-tooltip {
-  text-align: center;
-  display: none;
-  height: px2em(22px);
-  width: px2em(22px);
-  border-radius: 50%;
-  background-color: lighten($blue, 15%);
-  text-indent: px2em(-2px);
-  padding-top: px2em(2px);
-  @include box-shadow(rgba(0,0,0,0.1) 0 0 px2em(3px));
-  color: #fff;
-  @include transition-property(background-color);
-  @include transition-duration(.5s);
-  cursor: pointer;
-  &:hover {
-    background-color: $blue;
-  }
-}
-
 .github-link {
-  float: right;
-}
-.info-link {
-  float: left;
+  margin-top: px2em(15px);
 }
 
 .fancybox-close, .fancybox-close:hover {
   border-bottom: none;
-}
-
-.popover {
-  width: px2em(350px);
 }
 
 .project-container {
@@ -45,22 +19,23 @@
 }
 
 .project-title {
-  float: left;
   max-width: px2em(125px);
 }
-.thumbnail-container {
+
+.project-thumbnail-container {
   float: right;
   margin-left: px2em(10px);
   margin-bottom: px2em(10px);
-  img {
-    max-width: px2em(75px);
-    @include box-shadow(none);
-    @include transition-property(all);
-    @include transition-duration(.5s);
-    @include transition-timing-function(ease);
-    &:hover {
-      @include box-shadow(rgba(0,0,0,0.5) 0 0 px2em(5px));
-      @include border-radius(15%);
-    }
+}
+
+.project-thumbnail {
+  max-width: px2em(75px);
+  @include box-shadow(none);
+  @include transition-property(all);
+  @include transition-duration(.5s);
+  @include transition-timing-function(ease);
+  &:hover {
+    @include box-shadow(rgba(0,0,0,0.5) 0 0 px2em(5px));
+    @include border-radius(15%);
   }
 }

@@ -1,18 +1,14 @@
 .contents-wrapper.padding-large.centered
   %ul.no-list.margin-none.padding-none
     - @projects.each do |p|
-      - projectUrl = p.url.nil? ? "/projects/#{p.slug}/" : p.url
       %li.clearfix.padding-none.project-container
         .project-entry
-          .thumbnail-container
-            %a.fancybox{:href => image_path("projects/#{p.image}"), :target => '_blank', :title => p.name}
-              %img.img-polaroid{:src => image_path("projects/thumbs/#{p.image}")}
-          = link_to p.name, projectUrl, :target => "_blank", :class => 'text-dense project-title'
-          .info-tooltip.text-serif.text-emphasis.text-tiny.text-light.float-left.project-tooltip{:"data-title" => p.name, :"data-content" => p.description.html_safe}='i'
-          %p.clear-both.text-small
-            #{p.blurb}
+          .project-thumbnail-container
+            %a.project-thumbnail-link{:href => image_path("projects/#{p.image}"), :target => '_blank', :title => p.name}
+              %img.project-thumbnail.img-polaroid{:src => image_path("projects/thumbs/#{p.image}")}
+          = link_to p.name, p.url, :target => "_blank", :class => 'text-dense project-title'
           %p.github-link.text-tiny
             %a{:href => p.github, :target => '_blank' } GitHub repo
-          %p.info-link.text-tiny
-            %a.project-tooltip{:href => '#', :"data-title" => p.name, :"data-content" => p.description.html_safe} more info
+          %p.clear-both.text-small
+            #{p.description.html_safe}
         .project-divider.clear-both
