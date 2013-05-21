@@ -12,6 +12,7 @@ gem 'simple_form' # https://github.com/plataformatec/simple_form
 gem 'haml-rails' # can't be in assets for heroku
 gem 'newrelic_rpm' # heroku addon https://rpm.newrelic.com/accounts/335790/applications/setup
 gem 'figaro' # https://github.com/laserlemon/figaro
+gem 'annotate', ">=2.5.0" # https://github.com/ctran/annotate_models
 
 group :assets do
   gem 'compass-rails' #moving out of assets for heroku
