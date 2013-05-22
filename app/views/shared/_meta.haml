@@ -5,7 +5,9 @@
 %title= @meta_title
 %meta{:name => 'description', :content => @meta_description}
 %meta{:name => 'author', :content => 'Bradley Staples'}
+%meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
 %link{:rel => "image_src", :href => image_path('gingerboy.png')}
+%link{:rel => "shortcut", :href => '/favicon.ico'}
 =javascript_include_tag("//use.typekit.net/mgn4uat.js")
 :javascript
   try{Typekit.load();}catch(e){}
