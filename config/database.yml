@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: GingerBoyDev_development
+  database: C330507_gingerboy_dev
   pool: 5
   min_messages: WARNING
   host: localhost
@@ -11,7 +11,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: GingerBoyDev_test
+  database: C330507_gingerboy_test
   pool: 5
   min_messages: WARNING
   host: localhost
@@ -19,10 +19,12 @@ test:
   username: gingerboy
 
 
+
 production:
   adapter: postgresql
+  host: localhost
   encoding: unicode
-  database: GingerBoyDev_production
+  database: C330507_gingerboy_prod
   pool: 5
-  username: gingerboy
-  password:
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>

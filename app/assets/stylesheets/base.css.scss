@@ -30,6 +30,10 @@ a {
   }
 }
 
+li {
+  line-height: normal;
+}
+
 h1 {
   color: darken($blue, 5%);
   @include text-shadow(rgba(#fff, 0.5) px2em(2px) px2em(1px) 0);
@@ -79,6 +83,7 @@ hr {
   width: 80%;
   min-height: px2em(300px);
   max-width: px2em(1000px);
+  background-color: #fff;
   background-color: rgba(255, 255, 255, .7);
   @include border-radius(.5em);
   border: px2em(5px) solid #fff;
@@ -87,6 +92,10 @@ hr {
 
 .intro-note {
   margin-bottom: px2em(10px);
+}
+
+.ecom-modal-text {
+  display: none;
 }
 
 .gingerboy {

@@ -10,9 +10,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .footer-text {
-    display: inline;
-  }
   .social-media-list li {
     margin-bottom: px2em(10px);
   }
@@ -24,13 +21,16 @@
   }
 }
 
-@media only screen and (min-width:34.5em) {
+@media only screen and (min-width:36em) {
+  .footer-text {
+    display: inline;
+  }
   .intro-note {
     max-width: px2em(600px);
   }
   .intro-note-text {
     position: relative;
-    top: 50px;
+    top: 40px;
   }
   .gingerboy.first {
     display: block;
@@ -55,6 +55,9 @@
     input, textarea {
       margin: 0;
     }
+  }
+  .ecom-modal-text {
+    display: inline;
   }
 }
 
