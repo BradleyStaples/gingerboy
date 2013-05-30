@@ -2,7 +2,7 @@ ActionMailer::Base.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
   :domain               => "gmail.com",
-  :user_name            => ENV["GMAIL_USERNAME"],
-  :password             => ENV["GMAIL_PASSWORD"],
+  :user_name            => Figaro.env.gmail_username,
+  :password             => Figaro.env.gmail_password,
   :authentication       => "plain"
 }
