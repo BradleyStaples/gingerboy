@@ -1,5 +1,5 @@
 load 'deploy'
-# Uncomment if you are using Rails' asset pipeline
+# precompiile rails assets via load 'deploy/assets'
 load 'deploy/assets'
-# comment next line to skip loading any of the default tasks
+# load default tasks
 load 'config/deploy'

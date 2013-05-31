@@ -23,6 +23,7 @@ group :development do
   gem 'jshint_on_rails', '~> 1.0.2' #https://github.com/bgouveia/jshint_on_rails
   gem 'coffee-rails-source-maps' # https://github.com/markbates/coffee-rails-source-maps
   gem 'capistrano'
+  gem 'rvm-capistrano'
 end
 
 group :test do

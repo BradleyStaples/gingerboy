@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-GingerBoyDev::Application.config.secret_token = 'a9729d33e2cc6a4c34fb87a5d518a6e1616e752263ec7f56b7f7b574ecd004ce483f9d98646a9bd24514b161105f1fa86e9b9775310df4d02b2081e2634bac2d'
+GingerBoyDev::Application.config.secret_token = 'af67724fb9083122b36786c9b1951e9fdd87fb29f4ed95d02e336a6c78e921bdb4173012d91f28cd30332f6e5db9ae56de634d4f57d9990b68b35c480eb63bb3'
