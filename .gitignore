@@ -18,7 +18,7 @@
 /.idea
 
 # ignore compiled coffeescript maps
-/public/assets/source_maps
+/public/assets/*
 
 # Ignore application configuration
 /config/application.yml
