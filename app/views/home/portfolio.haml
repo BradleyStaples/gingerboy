@@ -4,8 +4,8 @@
       %li.clearfix.padding-none.project-container
         .project-entry
           .project-thumbnail-container
-            %a.project-thumbnail-link{:href => image_path("portfolios/#{p.image}"), :target => '_blank', :title => p.name}
-              %img.project-thumbnail.img-polaroid{:src => image_path("portfolios/thumbs/#{p.image}")}
+            %a.project-thumbnail-link{:href => asset_path("portfolios/#{p.image}", :digest => false), :target => '_blank', :title => p.name}
+              %img.project-thumbnail.img-polaroid{:src => asset_path("portfolios/thumbs/#{p.image}", :digest => false)}
           = link_to p.name, p.url, :target => "_blank", :class => 'text-dense project-title'
           %p.clear-both
             #{p.description.html_safe}

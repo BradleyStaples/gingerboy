@@ -4,8 +4,8 @@
       %li.clearfix.padding-none.project-container
         .project-entry
           .project-thumbnail-container
-            %a.project-thumbnail-link{:href => image_path("projects/#{p.image}"), :target => '_blank', :title => p.name}
-              %img.project-thumbnail.img-polaroid{:src => image_path("projects/thumbs/#{p.image}")}
+            %a.project-thumbnail-link{:href => asset_path("projects/#{p.image}", :digest => false), :target => '_blank', :title => p.name}
+              %img.project-thumbnail.img-polaroid{:src => asset_path("projects/thumbs/#{p.image}", :digest => false)}
           = link_to p.name, p.url, :target => "_blank", :class => 'text-dense project-title'
           %p.github-link.text-tiny
             %a{:href => p.github, :target => '_blank' } GitHub repo
