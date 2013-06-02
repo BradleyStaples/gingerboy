@@ -66,6 +66,23 @@
     border: px2em(10px) solid #fff;
     @include box-shadow(rgba(0,0,0,0.2) 0 0 px2em(13px));
   }
+  .limit-height {
+    .project-entry {
+      position: static;
+      max-height: none;
+      overflow: visible;
+      margin-bottom: 0;
+    }
+
+    .project-entry:after {
+      display: none;
+    }
+
+    .project-more {
+      display: none;
+    }
+  }
+
 }
 
 @media only screen and (min-width:52em) {

@@ -1,7 +1,7 @@
 .contents-wrapper.padding-large.centered
   %ul.no-list.margin-none.padding-none
     - @portfolios.each do |p|
-      %li.clearfix.padding-none.project-container
+      %li.clearfix.padding-none.project-container.limit-height
         .project-entry
           .project-thumbnail-container
             %a.project-thumbnail-link{:href => asset_path("portfolios/#{p.image}", :digest => false), :target => '_blank', :title => p.name}
@@ -9,6 +9,8 @@
           = link_to p.name, p.url, :target => "_blank", :class => 'text-dense project-title'
           %p.clear-both
             #{p.description.html_safe}
+        %a.project-more.text-center.text-small{:href => '#'}
+          Read more
         .project-divider
 
 #standardEcom.modal.hide.fade

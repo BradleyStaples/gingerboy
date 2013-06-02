@@ -11,6 +11,35 @@
   margin-top: px2em(10px);
 }
 
+.project-more {
+  display: none;
+}
+
+.limit-height {
+  .project-entry {
+    position: relative;
+    max-height: px2em(200px);
+    overflow: hidden;
+    margin-bottom: px2em(10px);
+  }
+
+  .project-entry:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: px2em(35px);
+    @include background-image(linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .75)));
+  }
+
+  .project-more {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 120px;
+  }
+}
+
 .project-divider {
   border-top: px2em(1px) solid lighten(rgba($orange, .5), 10%);
   border-bottom: px2em(1px) solid darken(rgba($orange, .5), 10%);
