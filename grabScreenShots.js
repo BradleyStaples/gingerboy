@@ -34,9 +34,9 @@ var attempted = 0,
         },
         {
             name: 'glyde-mobile',
-            url : 'http://m.glyde.com',
+            url : 'https://m.glyde.com/buy/product/12042057',
             render: mobileRender
-        },
+        }
         {
             name: 'sellsmart',
             url : 'http://glyde.com/sell-smart',
@@ -75,7 +75,7 @@ var attempted = 0,
     ],
     total = projects.length + portfolios.length;
 
-iterator(projects, "projects");
+//iterator(projects, "projects");
 iterator(portfolios, "portfolios");
 
 function iterator(sites, folder) {
@@ -174,4 +174,39 @@ function screenGrab(name, folder, page) {
 }
 
 
+    var rejectQuestions = function(flagged, rejections) {
 
+        var i = 0,
+            flaggedLength = flagged.length,
+            rejectionsLength = rejections.length,
+            n = 0,
+            questionNumber = null;
+        flagged2 = nodeListToArray(flagged);
+
+        for (i = 0; i < flaggedLength; i++) {
+            questionNumber = flagged[i].previousSibling.previousSibling.querySelector('input').value;
+            for (n = 0; n < rejectionsLength; n++) {
+                if (rejections[n] === questionNumber) {
+                    flagged2.splice(i, 1);
+                }
+            }
+        }
+
+        return flagged2;
+    };
+
+    var nodeListToArray = function(nodeList){
+        var arry = [],
+            i = 0,
+            len = nodeList.length;
+        for (i = 0; i < len; i++) {
+            arry.push(nodeList[i]);
+        }
+        return arry;
+    };
+
+    var flaggedQuestions = document.querySelectorAll('.flag-red'),
+        rejections = ['40'],
+        filteredQuestions = rejectQuestions(flaggedQuestions, rejections);
+
+    console.log(filteredQuestions);
